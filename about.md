@@ -4,7 +4,7 @@ layout: default
 permalink: /about/
 ---
 
-# Welcome to the About Page
+# Welcome to the About Page 2
 
 This is an example page that uses the Just the Docs template. You can write Markdown here, or add custom HTML if needed.
 

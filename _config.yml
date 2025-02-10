@@ -1,7 +1,32 @@
-title: My Awesome Site
-description: "A great place to write your documentation!"
+title: IGB190 Wiki
+description: "Some helpful documentation for the IGB190 ARPG Prototype."
 theme: "just-the-docs"
 
 # Other optional configurations you might want to add
 url: "https://igb190.github.io"
 baseurl: ""  # Only if your repo is a project page, e.g., username.github.io/repo-name
+
+navigation:
+  - text: "Home"
+    url: "/"
+  - text: "About"
+    url: "/about/"
+  - text: "Contact"
+    url: "/contact/"
+
+callouts_level: quiet # or loud
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
