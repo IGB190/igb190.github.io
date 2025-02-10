@@ -1,11 +1,32 @@
 {"0": {
+    "doc": "About",
+    "title": "Welcome to the About Page",
+    "content": "This is an example page that uses the Just the Docs template. You can write Markdown here, or add custom HTML if needed. ",
+    "url": "/about/#welcome-to-the-about-page",
+    
+    "relUrl": "/about/#welcome-to-the-about-page"
+  },"1": {
+    "doc": "About",
+    "title": "Features",
+    "content": ". | Clean layout | Responsive design | Easy to use | . ",
+    "url": "/about/#features",
+    
+    "relUrl": "/about/#features"
+  },"2": {
+    "doc": "About",
+    "title": "About",
+    "content": " ",
+    "url": "/about/",
+    
+    "relUrl": "/about/"
+  },"3": {
     "doc": "Home",
     "title": "Welcome to Just the Docs",
     "content": "This is the home page of your site! . ",
     "url": "/#welcome-to-just-the-docs",
     
     "relUrl": "/#welcome-to-just-the-docs"
-  },"1": {
+  },"4": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
