@@ -1,0 +1,7 @@
+title: My Awesome Site
+description: "A great place to write your documentation!"
+theme: "just-the-docs"
+
+# Other optional configurations you might want to add
+url: "https://igb190.github.io"
+baseurl: ""  # Only if your repo is a project page, e.g., username.github.io/repo-name

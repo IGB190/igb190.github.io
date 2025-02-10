@@ -1,0 +1,16 @@
+{"0": {
+    "doc": "Home",
+    "title": "Welcome to Just the Docs",
+    "content": "This is the home page of your site! . ",
+    "url": "/#welcome-to-just-the-docs",
+    
+    "relUrl": "/#welcome-to-just-the-docs"
+  },"1": {
+    "doc": "Home",
+    "title": "Home",
+    "content": " ",
+    "url": "/",
+    
+    "relUrl": "/"
+  }
+}
