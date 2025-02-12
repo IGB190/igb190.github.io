@@ -83,7 +83,8 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
-  jekyll
+  bundler (~> 2.6)
+  jekyll (~> 4.4.1)
   just-the-docs
 
 BUNDLED WITH
