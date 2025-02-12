@@ -17,7 +17,7 @@ navigation:
     url: "/example-code/"
     children:
       - text: "Coding an Item"
-      url: "/example-code/example-item-code/"
+        url: "/example-code/example-item-code/"
 
 callouts_level: quiet # or loud
 callouts:
