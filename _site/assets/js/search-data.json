@@ -126,32 +126,32 @@
     "relUrl": "/mixamo/#features"
   },"18": {
     "doc": "Resources",
-    "title": "Importing a Mixamo Model",
-    "content": " ",
-    "url": "/resources/#importing-a-mixamo-model",
+    "title": "Game Development Resources",
+    "content": "This page contains a collection of resources that will help you develop your games. ",
+    "url": "/resources/#game-development-resources",
     
-    "relUrl": "/resources/#importing-a-mixamo-model"
+    "relUrl": "/resources/#game-development-resources"
   },"19": {
     "doc": "Resources",
     "title": "Contents",
-    "content": ". | Importing a Mixamo Model . | Art | 3D Models | UI | Fonts | Music | Sound Effects | Textures | Animations | 3D Models | 3D Humanoid Characters | Download the Model | Import the Mixamo Model | Importing Mixamo Animations | Features | . | . ",
+    "content": ". | Game Development Resources . | Game Design | Game Programming Resources | UI | Fonts | Music | Sound Effects | Textures | Animations | 3D Models | 3D Humanoid Characters | Terrain Tools | Useful Unity Tools | . | . ",
     "url": "/resources/",
     
     "relUrl": "/resources/"
   },"20": {
     "doc": "Resources",
-    "title": "Art",
-    "content": " ",
-    "url": "/resources/#art",
+    "title": "Game Design",
+    "content": "Game Design Lenses: A collection of 101 lenses or perspectives that help you analyze and improve your game design decisions. These lenses focus on aspects like gameplay balance, player experience, and system design. Great for refining your ideas and spotting potential issues. The MDA Framework: A well-known framework for understanding how different game design elements interact. It helps you think about the relationship between game mechanics, player behavior (dynamics), and the emotional responses you want to evoke (aesthetics). The Golden Rule of Game Design: This article breaks down the “Golden Rule” of game design: designing with the player’s experience in mind. It provides advice on how to ensure that your game is intuitive, engaging, and enjoyable by prioritizing player feedback and emotions. The Game Maker’s Toolkit YouTube Channel: A YouTube channel by Mark Brown, who explores specific game design elements in detail, like level design, systems, and player psychology. His videos break down examples from real games and provide valuable insights into how game mechanics and narrative are intertwined. The 5 Types of Fun: In this video, Marc LeBlanc discusses the five types of fun: Sensation, Fantasy, Narrative, Challenge, and Fellowship. Understanding these types helps you design games that cater to different player preferences and build deeper, more engaging experiences. The Designer’s Notebook: A collection of articles by seasoned game designers, each offering insights on different elements of game design, from narrative to mechanics to systems design. Each article tackles a specific aspect of creating games and offers actionable advice. Game Accessibility Guidelines: Every game designer should bookmark these guidelines. They go through the principles you should follow and give examples for each task. There’s even a checklist you can download. GDC Vault: The Game Developers Conference adds all the various talks and presentations from their events to their vault. These range from technical advice on how to develop specific ideas to wider trends and best practices. Design Doc This channel answers the tricky, specific questions you might have about game design, focusing on the mechanics themselves. How do you stop people from hoarding items? Why add critical hits? What’s the point of fast travel? . Brackeys: A huge channel of tutorials that also delves into the actual game design decisions behind that development. The only downside is that they shut down a few years ago, so some videos can be a little outdated. ",
+    "url": "/resources/#game-design",
     
-    "relUrl": "/resources/#art"
+    "relUrl": "/resources/#game-design"
   },"21": {
     "doc": "Resources",
-    "title": "3D Models",
-    "content": " ",
-    "url": "/resources/#3d-models",
+    "title": "Game Programming Resources",
+    "content": "Game Programming Patterns: Keeping your code clean and organised is a major challenge, so this free ebook teaches you the best practices. Programming Patterns on Unity: Unity has released a similar guide around coding patterns and explaining how to use them inside Unity. freeCodeCamp.org: If you want to learn to code, this is the channel to visit. They go deep into the practical and theory side and even have the full Harvard Computer Science University course as a 25-hour video. ",
+    "url": "/resources/#game-programming-resources",
     
-    "relUrl": "/resources/#3d-models"
+    "relUrl": "/resources/#game-programming-resources"
   },"22": {
     "doc": "Resources",
     "title": "UI",
@@ -198,9 +198,9 @@
     "doc": "Resources",
     "title": "3D Models",
     "content": "TurboSquid: While TurboSquid is primarily a paid service, they offer a selection of free models, including characters, environments, and vehicles. CGTrader: A marketplace offering free 3D models, with a range of categories from low-poly characters to more detailed models suitable for game use. Sketchfab: A platform where creators can share 3D models, including both free and paid assets. Sketchfab’s library contains numerous free models, ranging from characters to environment assets. OpenGameArt: Offers a large collection of free 3D models, textures, and assets for game development, with many models suitable for prototyping and indie projects. Kenney: A well-known creator of free game assets, Kenney provides 3D models for characters, environments, and other game elements. Clara.io: A cloud-based 3D modeling tool with a library of free 3D models. You can find a variety of free models for use in games and other projects. Free3D: A repository offering free 3D models in various formats, including .obj, .fbx, and .3ds, for use in game development. ",
-    "url": "/resources/#3d-models-1",
+    "url": "/resources/#3d-models",
     
-    "relUrl": "/resources/#3d-models-1"
+    "relUrl": "/resources/#3d-models"
   },"29": {
     "doc": "Resources",
     "title": "3D Humanoid Characters",
@@ -210,33 +210,19 @@
     "relUrl": "/resources/#3d-humanoid-characters"
   },"30": {
     "doc": "Resources",
-    "title": "Download the Model",
-    "content": ". | Go to Mixamo. | Log in, or create a new account if you do not already have one. | Select or upload your character model. | Customize the animation if needed by selecting from the animations available. | Click the Download button. | Choose the following options for Unity: . | Format: FBX for Unity. | Pose: T-Pose. | Animation: If you want to include the animation, make sure it’s selected. | Skin: With Skin. | . | Click the Download button in the popup. | . ",
-    "url": "/resources/#download-the-model",
+    "title": "Terrain Tools",
+    "content": "World Machine (Free Version): World Machine is a powerful terrain generation tool that allows you to create realistic, complex terrains using an intuitive node-based system. The free version includes basic features, enabling you to generate heightmaps, apply erosion effects, and export terrains. Gaea (Free Version): Gaea is another terrain generation tool that offers a free version with powerful terrain-building features. It allows for the creation of heightmaps, erosion effects, and other features like textures and materials for creating realistic terrains. ",
+    "url": "/resources/#terrain-tools",
     
-    "relUrl": "/resources/#download-the-model"
+    "relUrl": "/resources/#terrain-tools"
   },"31": {
     "doc": "Resources",
-    "title": "Import the Mixamo Model",
-    "content": ". | Open your Unity project. | In the Project window, navigate to the folder you want to import the model into. | Drag the downloaded FBX file into the Unity folder, or right-click and select Import New Asset to locate and import the file manually. | Once imported, select the model in the Project window. | In the Inspector, go to the Model tab and ensure the Animation Type is set to Humanoid (for human-like characters) or Generic (for other types of models). | Under the Material section, if you’re using the legacy shader, check Import Materials and Use Legacy Materials to ensure proper texture mapping. This will help the model use the correct materials that were imported with the FBX. | Click Apply. | . ",
-    "url": "/resources/#import-the-mixamo-model",
+    "title": "Useful Unity Tools",
+    "content": "DOTween: A fast and efficient animation system that works with Unity’s tweening features to create smooth animations for any kind of object or property. PrimeTween: A high-performance animation and sequencing tool designed to provide maximum flexibility and speed for complex animation systems. PlayerPref Editor: A user-friendly editor tool for managing Unity PlayerPrefs, allowing easy access and modification of saved data. Sticky Notes: A tool that lets developers place sticky notes in the Unity Editor for better organization and reminders within the project. Editor Attributes: A package that provides useful attributes to improve Unity Editor interfaces, such as custom labels, color-coding, and tooltips. Serialized Dictionary: A Unity plugin for using dictionaries in the Inspector, offering a more flexible data structure for game developers. Fast Script Reload: A tool that speeds up script reloading during development, reducing iteration times and enhancing productivity for Unity developers. ",
+    "url": "/resources/#useful-unity-tools",
     
-    "relUrl": "/resources/#import-the-mixamo-model"
+    "relUrl": "/resources/#useful-unity-tools"
   },"32": {
-    "doc": "Resources",
-    "title": "Importing Mixamo Animations",
-    "content": ". | Go to Mixamo.com. | Log in, or create a new account if you do not already have one. | . Mixamo models use different avatars for defining animations. This means that an animation shown on one character may not look correct if it is applied to a different character. If you encounter this problem, you should use a T-Pose for the avatar instead. dfgdfgdfg . ",
-    "url": "/resources/#importing-mixamo-animations",
-    
-    "relUrl": "/resources/#importing-mixamo-animations"
-  },"33": {
-    "doc": "Resources",
-    "title": "Features",
-    "content": ". | Clean layout | Responsive design | Easy to use | . Default label . Blue label . Stable . New release . Coming soon . Deprecated . ",
-    "url": "/resources/#features",
-    
-    "relUrl": "/resources/#features"
-  },"34": {
     "doc": "Resources",
     "title": "Resources",
     "content": " ",

@@ -4,17 +4,43 @@ layout: default
 permalink: /resources/
 ---
 
-# Importing a Mixamo Model
+# Game Development Resources
+This page contains a collection of resources that will help you develop your games.
 
 <h2 class="text-delta">Contents</h2>
 1. TOC
 {:toc}
 
-## Art
+## Game Design
 
+[Game Design Lenses](https://www.justinmcelroy.com/game-design-lenses/): A collection of 101 lenses or perspectives that help you analyze and improve your game design decisions. These lenses focus on aspects like gameplay balance, player experience, and system design. Great for refining your ideas and spotting potential issues.
 
+[The MDA Framework](https://www.cs.ualberta.ca/~games/MDA.pdf): A well-known framework for understanding how different game design elements interact. It helps you think about the relationship between game mechanics, player behavior (dynamics), and the emotional responses you want to evoke (aesthetics).
 
-## 3D Models
+[The Golden Rule of Game Design](https://www.gamasutra.com/view/feature/130832/the_gold_standard.php): This article breaks down the "Golden Rule" of game design: designing with the player’s experience in mind. It provides advice on how to ensure that your game is intuitive, engaging, and enjoyable by prioritizing player feedback and emotions.
+
+[The Game Maker’s Toolkit YouTube Channel](https://www.youtube.com/c/MarkBrownGMT): A YouTube channel by Mark Brown, who explores specific game design elements in detail, like level design, systems, and player psychology. His videos break down examples from real games and provide valuable insights into how game mechanics and narrative are intertwined.
+
+[The 5 Types of Fun](https://www.youtube.com/watch?v=jxGb2fD0_Rk): In this video, Marc LeBlanc discusses the five types of fun: Sensation, Fantasy, Narrative, Challenge, and Fellowship. Understanding these types helps you design games that cater to different player preferences and build deeper, more engaging experiences.
+
+[The Designer’s Notebook](https://www.gamasutra.com/blogs/DesignerNotebooks/): A collection of articles by seasoned game designers, each offering insights on different elements of game design, from narrative to mechanics to systems design. Each article tackles a specific aspect of creating games and offers actionable advice.
+
+[Game Accessibility Guidelines](https://gameaccessibilityguidelines.com/basic/): Every game designer should bookmark these guidelines. They go through the principles you should follow and give examples for each task. There’s even a checklist you can download.
+
+[GDC Vault](https://www.gdcvault.com/free): The Game Developers Conference adds all the various talks and presentations from their events to their vault. These range from technical advice on how to develop specific ideas to wider trends and best practices.
+
+[Design Doc](https://www.youtube.com/channel/UCNOVwMpD-5A1xzcQGbIHNeA) This channel answers the tricky, specific questions you might have about game design, focusing on the mechanics themselves. How do you stop people from hoarding items? Why add critical hits? What’s the point of fast travel?
+
+[Brackeys](https://www.youtube.com/@Brackeys): A huge channel of tutorials that also delves into the actual game design decisions behind that development. The only downside is that they shut down a few years ago, so some videos can be a little outdated.
+
+## Game Programming Resources
+
+[Game Programming Patterns](https://gameprogrammingpatterns.com/contents.html): Keeping your code clean and organised is a major challenge, so this free ebook teaches you the best practices.
+
+[Programming Patterns on Unity](https://unity.com/resources/level-up-your-code-with-game-programming-patterns): Unity has released a similar guide around coding patterns and explaining how to use them inside Unity.
+
+[freeCodeCamp.org](https://www.youtube.com/@freecodecamp): If you want to learn to code, this is the channel to visit. They go deep into the practical and theory side and even have the full Harvard Computer Science University course as a 25-hour video.
+
 
 ## UI
 
@@ -103,63 +129,24 @@ permalink: /resources/
 
 [Kenney](https://kenney.nl/): Kenney’s free asset packs include animated 3D character models, along with animations for movements such as walking and jumping. The models are fully rigged and ready to be used in your projects. All assets from Kenney are free for both commercial and non-commercial use, with no attribution required.
 
-## Download the Model
+## Terrain Tools
 
-{: .highlight }
-> 1. Go to [Mixamo](https://www.mixamo.com/).
-1. Log in, or create a new account if you do not already have one.
-1. Select or upload your character model.
-1. Customize the animation if needed by selecting from the animations available.
-1. Click the Download button.
-1. Choose the following options for Unity:
-- **Format**: FBX for Unity.
-- **Pose**: T-Pose.
-- **Animation**: If you want to include the animation, make sure it's selected.
-- **Skin**: With Skin.
-1. Click the Download button in the popup.
+[World Machine (Free Version)](https://www.world-machine.com/): World Machine is a powerful terrain generation tool that allows you to create realistic, complex terrains using an intuitive node-based system. The free version includes basic features, enabling you to generate heightmaps, apply erosion effects, and export terrains.
 
-## Import the Mixamo Model
+[Gaea (Free Version)](https://quadspinner.com/): Gaea is another terrain generation tool that offers a free version with powerful terrain-building features. It allows for the creation of heightmaps, erosion effects, and other features like textures and materials for creating realistic terrains.
 
-{: .highlight }
-> 1. Open your Unity project.
-1. In the Project window, navigate to the folder you want to import the model into.
-1. Drag the downloaded FBX file into the Unity folder, or right-click and select Import New Asset to locate and import the file manually.
-1. Once imported, select the model in the Project window.
-1. In the Inspector, go to the Model tab and ensure the Animation Type is set to Humanoid (for human-like characters) or Generic (for other types of models).
-1. Under the Material section, if you're using the legacy shader, check Import Materials and Use Legacy Materials to ensure proper texture mapping. This will help the model use the correct materials that were imported with the FBX.
-1. Click Apply.
+## Useful Unity Tools
 
-## Importing Mixamo Animations
-> 1. Go to Mixamo.com.
-1. Log in, or create a new account if you do not already have one.
+[DOTween](https://assetstore.unity.com/packages/tools/animation/dotween-hotween-v2-27676): A fast and efficient animation system that works with Unity’s tweening features to create smooth animations for any kind of object or property.
 
-{: .warning }
-Mixamo models use different avatars for defining animations. This means that an animation shown on one character may not look correct if it is applied to a different character. If you encounter this problem, you should use a T-Pose for the avatar instead.
+[PrimeTween](https://assetstore.unity.com/packages/tools/animation/primetween-high-performance-animations-and-sequences-252960): A high-performance animation and sequencing tool designed to provide maximum flexibility and speed for complex animation systems.
 
-<iframe width="480" height="360" src="http://www.youtube.com/embed/WO82PoAczTc" frameborder="0"> </iframe>
+[PlayerPref Editor](https://assetstore.unity.com/packages/tools/utilities/playerprefs-editor-167903): A user-friendly editor tool for managing Unity PlayerPrefs, allowing easy access and modification of saved data.
 
+[Sticky Notes](https://assetstore.unity.com/packages/tools/utilities/sticky-notes-148356): A tool that lets developers place sticky notes in the Unity Editor for better organization and reminders within the project.
 
-dfgdfgdfg
+[Editor Attributes](https://assetstore.unity.com/packages/tools/gui/editorattributes-269285): A package that provides useful attributes to improve Unity Editor interfaces, such as custom labels, color-coding, and tooltips.
 
-## Features
-- Clean layout
-- Responsive design
-- Easy to use
+[Serialized Dictionary](https://assetstore.unity.com/packages/tools/utilities/serialized-dictionary-243052): A Unity plugin for using dictionaries in the Inspector, offering a more flexible data structure for game developers.
 
-Default label
-{: .label }
-
-Blue label
-{: .label .label-blue }
-
-Stable
-{: .label .label-green }
-
-New release
-{: .label .label-purple }
-
-Coming soon
-{: .label .label-yellow }
-
-Deprecated
-{: .label .label-red }
+[Fast Script Reload](https://assetstore.unity.com/packages/tools/utilities/fast-script-reload-239351): A tool that speeds up script reloading during development, reducing iteration times and enhancing productivity for Unity developers.
