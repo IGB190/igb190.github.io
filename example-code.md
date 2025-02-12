@@ -1,5 +1,5 @@
 ---
-title: Example Item Code
+title: Coding
 layout: default
 ---
 
