@@ -48,181 +48,279 @@
     
     "relUrl": "/camera/#features"
   },"7": {
+    "doc": "Example Item Code",
+    "title": "Example Item Code 2",
+    "content": "While you are not required to write any code in the development of your experience, if you need to implement complex logic for an item, ability, quest, or other game mechanic, this section will show you how it can be done. This page will focus specifically on how you can build an item with custom logic. The experience can be developed without any code, but if you do want to use code to develop your items, abilities, quests or other content to control complex logic which cannot easi . ",
+    "url": "/example-code.html#example-item-code-2",
+    
+    "relUrl": "/example-code.html#example-item-code-2"
+  },"8": {
+    "doc": "Example Item Code",
+    "title": "Contents",
+    "content": ". | Example Item Code 2 . | Download the Model | Import the Mixamo Model | Importing Mixamo Animations | Features | . | . ",
+    "url": "/example-code.html",
+    
+    "relUrl": "/example-code.html"
+  },"9": {
+    "doc": "Example Item Code",
+    "title": "Download the Model",
+    "content": ". | Go to Mixamo. | Log in, or create a new account if you do not already have one. | Select or upload your character model. | Customize the animation if needed by selecting from the animations available. | Click the Download button. | Choose the following options for Unity: . | Format: FBX for Unity. | Pose: T-Pose. | Animation: If you want to include the animation, make sure it’s selected. | Skin: With Skin. | . | Click the Download button in the popup. | . ",
+    "url": "/example-code.html#download-the-model",
+    
+    "relUrl": "/example-code.html#download-the-model"
+  },"10": {
+    "doc": "Example Item Code",
+    "title": "Import the Mixamo Model",
+    "content": ". | Open your Unity project. | In the Project window, navigate to the folder you want to import the model into. | Drag the downloaded FBX file into the Unity folder, or right-click and select Import New Asset to locate and import the file manually. | Once imported, select the model in the Project window. | In the Inspector, go to the Model tab and ensure the Animation Type is set to Humanoid (for human-like characters) or Generic (for other types of models). | Under the Material section, if you’re using the legacy shader, check Import Materials and Use Legacy Materials to ensure proper texture mapping. This will help the model use the correct materials that were imported with the FBX. | Click Apply. | . ",
+    "url": "/example-code.html#import-the-mixamo-model",
+    
+    "relUrl": "/example-code.html#import-the-mixamo-model"
+  },"11": {
+    "doc": "Example Item Code",
+    "title": "Importing Mixamo Animations",
+    "content": ". | Go to Mixamo.com. | Log in, or create a new account if you do not already have one. | . Mixamo models use different avatars for defining animations. This means that an animation shown on one character may not look correct if it is applied to a different character. If you encounter this problem, you should use a T-Pose for the avatar instead. dfgdfgdfg . ",
+    "url": "/example-code.html#importing-mixamo-animations",
+    
+    "relUrl": "/example-code.html#importing-mixamo-animations"
+  },"12": {
+    "doc": "Example Item Code",
+    "title": "Features",
+    "content": ". | Clean layout | Responsive design | Easy to use | . Default label . Blue label . Stable . New release . Coming soon . Deprecated . ",
+    "url": "/example-code.html#features",
+    
+    "relUrl": "/example-code.html#features"
+  },"13": {
+    "doc": "Example Item Code",
+    "title": "Example Item Code",
+    "content": " ",
+    "url": "/example-code.html",
+    
+    "relUrl": "/example-code.html"
+  },"14": {
+    "doc": "Example Item Code Test",
+    "title": "Example Item Code",
+    "content": "While you are not required to write any code in the development of your experience, if you need to implement complex logic for an item, ability, quest, or other game mechanic, this section will show you how it can be done. This page will focus specifically on how you can build an item with custom logic. The experience can be developed without any code, but if you do want to use code to develop your items, abilities, quests or other content to control complex logic which cannot easi . ",
+    "url": "/example-item-code.html#example-item-code",
+    
+    "relUrl": "/example-item-code.html#example-item-code"
+  },"15": {
+    "doc": "Example Item Code Test",
+    "title": "Contents",
+    "content": ". | Example Item Code . | Download the Model | Import the Mixamo Model | Importing Mixamo Animations | Features | . | . ",
+    "url": "/example-item-code.html",
+    
+    "relUrl": "/example-item-code.html"
+  },"16": {
+    "doc": "Example Item Code Test",
+    "title": "Download the Model",
+    "content": ". | Go to Mixamo. | Log in, or create a new account if you do not already have one. | Select or upload your character model. | Customize the animation if needed by selecting from the animations available. | Click the Download button. | Choose the following options for Unity: . | Format: FBX for Unity. | Pose: T-Pose. | Animation: If you want to include the animation, make sure it’s selected. | Skin: With Skin. | . | Click the Download button in the popup. | . ",
+    "url": "/example-item-code.html#download-the-model",
+    
+    "relUrl": "/example-item-code.html#download-the-model"
+  },"17": {
+    "doc": "Example Item Code Test",
+    "title": "Import the Mixamo Model",
+    "content": ". | Open your Unity project. | In the Project window, navigate to the folder you want to import the model into. | Drag the downloaded FBX file into the Unity folder, or right-click and select Import New Asset to locate and import the file manually. | Once imported, select the model in the Project window. | In the Inspector, go to the Model tab and ensure the Animation Type is set to Humanoid (for human-like characters) or Generic (for other types of models). | Under the Material section, if you’re using the legacy shader, check Import Materials and Use Legacy Materials to ensure proper texture mapping. This will help the model use the correct materials that were imported with the FBX. | Click Apply. | . ",
+    "url": "/example-item-code.html#import-the-mixamo-model",
+    
+    "relUrl": "/example-item-code.html#import-the-mixamo-model"
+  },"18": {
+    "doc": "Example Item Code Test",
+    "title": "Importing Mixamo Animations",
+    "content": ". | Go to Mixamo.com. | Log in, or create a new account if you do not already have one. | . Mixamo models use different avatars for defining animations. This means that an animation shown on one character may not look correct if it is applied to a different character. If you encounter this problem, you should use a T-Pose for the avatar instead. dfgdfgdfg . ",
+    "url": "/example-item-code.html#importing-mixamo-animations",
+    
+    "relUrl": "/example-item-code.html#importing-mixamo-animations"
+  },"19": {
+    "doc": "Example Item Code Test",
+    "title": "Features",
+    "content": ". | Clean layout | Responsive design | Easy to use | . Default label . Blue label . Stable . New release . Coming soon . Deprecated . ",
+    "url": "/example-item-code.html#features",
+    
+    "relUrl": "/example-item-code.html#features"
+  },"20": {
+    "doc": "Example Item Code Test",
+    "title": "Example Item Code Test",
+    "content": " ",
+    "url": "/example-item-code.html",
+    
+    "relUrl": "/example-item-code.html"
+  },"21": {
     "doc": "Home",
     "title": "Welcome to Just the Docs",
     "content": "This is the home page of your site! . ",
     "url": "/#welcome-to-just-the-docs",
     
     "relUrl": "/#welcome-to-just-the-docs"
-  },"8": {
+  },"22": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
     "url": "/",
     
     "relUrl": "/"
-  },"9": {
+  },"23": {
     "doc": "Info",
     "title": "Welcome to the Info Page 2",
     "content": "This is an example page that uses the Just the Docs template. You can write Markdown here, or add custom HTML if needed. ",
     "url": "/info/#welcome-to-the-info-page-2",
     
     "relUrl": "/info/#welcome-to-the-info-page-2"
-  },"10": {
+  },"24": {
     "doc": "Info",
     "title": "Features",
     "content": ". | Clean layout | Responsive design | Easy to use | . Default label . Blue label . Stable . New release . Coming soon . Deprecated . ",
     "url": "/info/#features",
     
     "relUrl": "/info/#features"
-  },"11": {
+  },"25": {
     "doc": "Info",
     "title": "Info",
     "content": " ",
     "url": "/info/",
     
     "relUrl": "/info/"
-  },"12": {
+  },"26": {
     "doc": "Importing a Mixamo Model",
     "title": "Importing a Mixamo Model",
     "content": " ",
     "url": "/mixamo/",
     
     "relUrl": "/mixamo/"
-  },"13": {
+  },"27": {
     "doc": "Importing a Mixamo Model",
     "title": "Contents",
     "content": ". | Importing a Mixamo Model . | Download the Model | Import the Mixamo Model | Importing Mixamo Animations | Features | . | . ",
     "url": "/mixamo/",
     
     "relUrl": "/mixamo/"
-  },"14": {
+  },"28": {
     "doc": "Importing a Mixamo Model",
     "title": "Download the Model",
     "content": ". | Go to Mixamo. | Log in, or create a new account if you do not already have one. | Select or upload your character model. | Customize the animation if needed by selecting from the animations available. | Click the Download button. | Choose the following options for Unity: . | Format: FBX for Unity. | Pose: T-Pose. | Animation: If you want to include the animation, make sure it’s selected. | Skin: With Skin. | . | Click the Download button in the popup. | . ",
     "url": "/mixamo/#download-the-model",
     
     "relUrl": "/mixamo/#download-the-model"
-  },"15": {
+  },"29": {
     "doc": "Importing a Mixamo Model",
     "title": "Import the Mixamo Model",
     "content": ". | Open your Unity project. | In the Project window, navigate to the folder you want to import the model into. | Drag the downloaded FBX file into the Unity folder, or right-click and select Import New Asset to locate and import the file manually. | Once imported, select the model in the Project window. | In the Inspector, go to the Model tab and ensure the Animation Type is set to Humanoid (for human-like characters) or Generic (for other types of models). | Under the Material section, if you’re using the legacy shader, check Import Materials and Use Legacy Materials to ensure proper texture mapping. This will help the model use the correct materials that were imported with the FBX. | Click Apply. | . ",
     "url": "/mixamo/#import-the-mixamo-model",
     
     "relUrl": "/mixamo/#import-the-mixamo-model"
-  },"16": {
+  },"30": {
     "doc": "Importing a Mixamo Model",
     "title": "Importing Mixamo Animations",
     "content": ". | Go to Mixamo.com. | Log in, or create a new account if you do not already have one. | . Mixamo models use different avatars for defining animations. This means that an animation shown on one character may not look correct if it is applied to a different character. If you encounter this problem, you should use a T-Pose for the avatar instead. dfgdfgdfg . ",
     "url": "/mixamo/#importing-mixamo-animations",
     
     "relUrl": "/mixamo/#importing-mixamo-animations"
-  },"17": {
+  },"31": {
     "doc": "Importing a Mixamo Model",
     "title": "Features",
     "content": ". | Clean layout | Responsive design | Easy to use | . Default label . Blue label . Stable . New release . Coming soon . Deprecated . ",
     "url": "/mixamo/#features",
     
     "relUrl": "/mixamo/#features"
-  },"18": {
+  },"32": {
     "doc": "Resources",
     "title": "Game Development Resources",
     "content": "This page contains a collection of resources that will help you develop your games. ",
     "url": "/resources/#game-development-resources",
     
     "relUrl": "/resources/#game-development-resources"
-  },"19": {
+  },"33": {
     "doc": "Resources",
     "title": "Contents",
     "content": ". | Game Development Resources . | Game Design | Game Programming Resources | UI | Fonts | Music | Sound Effects | Textures | Animations | 3D Models | 3D Humanoid Characters | Terrain Tools | Useful Unity Tools | . | . ",
     "url": "/resources/",
     
     "relUrl": "/resources/"
-  },"20": {
+  },"34": {
     "doc": "Resources",
     "title": "Game Design",
     "content": "Game Design Lenses: A collection of 101 lenses or perspectives that help you analyze and improve your game design decisions. These lenses focus on aspects like gameplay balance, player experience, and system design. Great for refining your ideas and spotting potential issues. The MDA Framework: A well-known framework for understanding how different game design elements interact. It helps you think about the relationship between game mechanics, player behavior (dynamics), and the emotional responses you want to evoke (aesthetics). The Golden Rule of Game Design: This article breaks down the “Golden Rule” of game design: designing with the player’s experience in mind. It provides advice on how to ensure that your game is intuitive, engaging, and enjoyable by prioritizing player feedback and emotions. The Game Maker’s Toolkit YouTube Channel: A YouTube channel by Mark Brown, who explores specific game design elements in detail, like level design, systems, and player psychology. His videos break down examples from real games and provide valuable insights into how game mechanics and narrative are intertwined. The 5 Types of Fun: In this video, Marc LeBlanc discusses the five types of fun: Sensation, Fantasy, Narrative, Challenge, and Fellowship. Understanding these types helps you design games that cater to different player preferences and build deeper, more engaging experiences. The Designer’s Notebook: A collection of articles by seasoned game designers, each offering insights on different elements of game design, from narrative to mechanics to systems design. Each article tackles a specific aspect of creating games and offers actionable advice. Game Accessibility Guidelines: Every game designer should bookmark these guidelines. They go through the principles you should follow and give examples for each task. There’s even a checklist you can download. GDC Vault: The Game Developers Conference adds all the various talks and presentations from their events to their vault. These range from technical advice on how to develop specific ideas to wider trends and best practices. Design Doc This channel answers the tricky, specific questions you might have about game design, focusing on the mechanics themselves. How do you stop people from hoarding items? Why add critical hits? What’s the point of fast travel? . Brackeys: A huge channel of tutorials that also delves into the actual game design decisions behind that development. The only downside is that they shut down a few years ago, so some videos can be a little outdated. ",
     "url": "/resources/#game-design",
     
     "relUrl": "/resources/#game-design"
-  },"21": {
+  },"35": {
     "doc": "Resources",
     "title": "Game Programming Resources",
     "content": "Game Programming Patterns: Keeping your code clean and organised is a major challenge, so this free ebook teaches you the best practices. Programming Patterns on Unity: Unity has released a similar guide around coding patterns and explaining how to use them inside Unity. freeCodeCamp.org: If you want to learn to code, this is the channel to visit. They go deep into the practical and theory side and even have the full Harvard Computer Science University course as a 25-hour video. ",
     "url": "/resources/#game-programming-resources",
     
     "relUrl": "/resources/#game-programming-resources"
-  },"22": {
+  },"36": {
     "doc": "Resources",
     "title": "UI",
     "content": "Game UI Database: A collection of reference images clearly showing key UI elements for thousands of games. Game-icons.net: A collection of thousands of game icons (CC 3.0 Licence). ",
     "url": "/resources/#ui",
     
     "relUrl": "/resources/#ui"
-  },"23": {
+  },"37": {
     "doc": "Resources",
     "title": "Fonts",
     "content": "Google Fonts – Offers a wide variety of fonts that are free for personal and commercial use. It’s easy to integrate into both web and game projects. DaFont – A large collection of fonts, many of which are free for personal use (and some for commercial use). It’s popular for more creative and themed fonts. 1001 Free Fonts – Offers a variety of fonts, with some fonts available for commercial use. Be sure to check the licensing for each font. FontSpace – A large community-driven collection of free fonts, many of which are free for commercial use. Always check the font license. ",
     "url": "/resources/#fonts",
     
     "relUrl": "/resources/#fonts"
-  },"24": {
+  },"38": {
     "doc": "Resources",
     "title": "Music",
     "content": "Free Music Archive (FMA) – A great resource for free music under various licenses, including Creative Commons. It’s a good place to find royalty-free music for your game. Incompetech – Created by composer Kevin MacLeod, Incompetech offers a large library of royalty-free music that can be used for games, with proper attribution required. Bensound – Offers royalty-free music, with many tracks available for free with attribution. Great for background music in games. ",
     "url": "/resources/#music",
     
     "relUrl": "/resources/#music"
-  },"25": {
+  },"39": {
     "doc": "Resources",
     "title": "Sound Effects",
     "content": "GDC Free Sound and Music: Every year, the Game Developers Conference (GDC) offers a collection of free sound effects and music that can be used in your games. The collection includes tracks from the GDC Audio and Music track, often showcasing great work from professionals in the industry. You can access these resources for free after registering with GDC. Freesound A collaborative database of audio clips, many of which are free for use under a Creative Commons license. You can find a wide range of sound effects, from nature sounds to urban noises. SoundBible – Provides free sound effects that are either public domain or Creative Commons-licensed, perfect for game development. FreeSoundEffects – A collection of royalty-free sound effects, with many available for both personal and commercial use. BBC Sound Effects Archive – A massive collection of over 16,000 sound effects, available for free under a RemArc license for personal and educational use. ",
     "url": "/resources/#sound-effects",
     
     "relUrl": "/resources/#sound-effects"
-  },"26": {
+  },"40": {
     "doc": "Resources",
     "title": "Textures",
     "content": "AmbientCG – Offers high-quality textures under a Creative Commons CC0 license, meaning you can use them for any project, even commercial ones. They have a wide range of textures, including materials, wood, metals, and more. Texture Haven – A great resource for high-quality, free textures with a focus on photorealistic materials. All textures are available under the CC0 license. Textures.com – Provides a large library of free textures, with a focus on realistic materials. They offer free textures with a limitation on the number of downloads per day, and a paid option for more frequent downloads. CGBookcase – A collection of high-quality textures, all free for personal and commercial use, under a CC0 license. It includes a variety of materials such as fabrics, metals, and bricks. Share Textures – Offers a variety of free textures, including PBR (physically-based rendering) textures, which are great for game engines like Unity and Unreal. 3DTextures.me A library of PBR and high-quality textures that are free to use under a Creative Commons license. They have a wide range of textures for environments, buildings, and materials. FreePBR.com – Focuses on providing free PBR (Physically Based Rendering) textures, useful for realistic game environments. Textures are free to use for both personal and commercial projects. GameTextures – Offers both free and paid textures, with a range of materials like metal, wood, and rock. The free options include a good selection, and you can use them in commercial projects with proper attribution. ",
     "url": "/resources/#textures",
     
     "relUrl": "/resources/#textures"
-  },"27": {
+  },"41": {
     "doc": "Resources",
     "title": "Animations",
     "content": "Mixamo A fantastic resource for free, high-quality 3D character animations. It allows you to upload your own models or use their library of free characters and animations. All animations are free for commercial and non-commercial use. OpenGameArt – Offers a variety of 2D and 3D assets, including character animations, free for use in your games. The animations available are licensed under Creative Commons or public domain. Kenney – Known for its high-quality, free game assets, Kenney provides 2D and 3D character animations. All assets are free to use in commercial and non-commercial projects. Unity Asset Store (Free Section) – The Unity Asset Store has a collection of free animation packs for both 2D and 3D models. These can be used in Unity projects with clear licensing terms, which can include commercial use. ",
     "url": "/resources/#animations",
     
     "relUrl": "/resources/#animations"
-  },"28": {
+  },"42": {
     "doc": "Resources",
     "title": "3D Models",
     "content": "TurboSquid: While TurboSquid is primarily a paid service, they offer a selection of free models, including characters, environments, and vehicles. CGTrader: A marketplace offering free 3D models, with a range of categories from low-poly characters to more detailed models suitable for game use. Sketchfab: A platform where creators can share 3D models, including both free and paid assets. Sketchfab’s library contains numerous free models, ranging from characters to environment assets. OpenGameArt: Offers a large collection of free 3D models, textures, and assets for game development, with many models suitable for prototyping and indie projects. Kenney: A well-known creator of free game assets, Kenney provides 3D models for characters, environments, and other game elements. Clara.io: A cloud-based 3D modeling tool with a library of free 3D models. You can find a variety of free models for use in games and other projects. Free3D: A repository offering free 3D models in various formats, including .obj, .fbx, and .3ds, for use in game development. ",
     "url": "/resources/#3d-models",
     
     "relUrl": "/resources/#3d-models"
-  },"29": {
+  },"43": {
     "doc": "Resources",
     "title": "3D Humanoid Characters",
     "content": "Mixamo: Mixamo offers a vast collection of free 3D character animations that are ready to be applied to your models. You can upload your own 3D models or choose from a variety of characters provided by Mixamo. The animations cover a wide range of actions, from running and jumping to combat and dancing. All animations are free for both personal and commercial use. OpenGameArt: OpenGameArt provides a range of free 3D animated character models. The site includes fully rigged characters with animation sets for various actions, such as walking, running, and attacking. Models and animations are generally licensed under Creative Commons or public domain, allowing for free use in both personal and commercial projects. Kenney: Kenney’s free asset packs include animated 3D character models, along with animations for movements such as walking and jumping. The models are fully rigged and ready to be used in your projects. All assets from Kenney are free for both commercial and non-commercial use, with no attribution required. ",
     "url": "/resources/#3d-humanoid-characters",
     
     "relUrl": "/resources/#3d-humanoid-characters"
-  },"30": {
+  },"44": {
     "doc": "Resources",
     "title": "Terrain Tools",
     "content": "World Machine (Free Version): World Machine is a powerful terrain generation tool that allows you to create realistic, complex terrains using an intuitive node-based system. The free version includes basic features, enabling you to generate heightmaps, apply erosion effects, and export terrains. Gaea (Free Version): Gaea is another terrain generation tool that offers a free version with powerful terrain-building features. It allows for the creation of heightmaps, erosion effects, and other features like textures and materials for creating realistic terrains. ",
     "url": "/resources/#terrain-tools",
     
     "relUrl": "/resources/#terrain-tools"
-  },"31": {
+  },"45": {
     "doc": "Resources",
     "title": "Useful Unity Tools",
     "content": "DOTween: A fast and efficient animation system that works with Unity’s tweening features to create smooth animations for any kind of object or property. PrimeTween: A high-performance animation and sequencing tool designed to provide maximum flexibility and speed for complex animation systems. PlayerPref Editor: A user-friendly editor tool for managing Unity PlayerPrefs, allowing easy access and modification of saved data. Sticky Notes: A tool that lets developers place sticky notes in the Unity Editor for better organization and reminders within the project. Editor Attributes: A package that provides useful attributes to improve Unity Editor interfaces, such as custom labels, color-coding, and tooltips. Serialized Dictionary: A Unity plugin for using dictionaries in the Inspector, offering a more flexible data structure for game developers. Fast Script Reload: A tool that speeds up script reloading during development, reducing iteration times and enhancing productivity for Unity developers. ",
     "url": "/resources/#useful-unity-tools",
     
     "relUrl": "/resources/#useful-unity-tools"
-  },"32": {
+  },"46": {
     "doc": "Resources",
     "title": "Resources",
     "content": " ",
