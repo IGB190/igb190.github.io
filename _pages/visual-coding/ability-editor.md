@@ -8,14 +8,13 @@ parent: Visual Coding
 {: .no_toc }
 The ability editor allows you to create abilities and use custom logic to control the functionality of those abilities.
 
+![Image of the Ability Editor](../assets/ability-editor.jpg)
+
 ---
 <h2 class="text-delta">Contents</h2>
 1. TOC
 {:toc}
 ---
-
-## Test
-![Image of the Ability Editor](../assets/ability-editor.jpg)
 
 ## Opening the Window
 To open the window, go to `IGB190 > Open Custom Windows` in the main Unity toolbar. This will open all of the main windows
