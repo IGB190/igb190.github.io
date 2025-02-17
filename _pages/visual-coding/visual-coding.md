@@ -26,12 +26,63 @@ Custom visual code can be added to specific items using the [Item Editor](item-e
 
 Below is an example showing the visual code for the **War Cry** ability. When the ability containing this script is cast, it spawns a visual effect on the caster, then their damage dealt is increased by 25% and damage taken is decreased by 25% for 10 seconds.
 
-## Creating Scripts
+## Events
 
-| **Events** |
-| When a unit begins casting this ability |
-| When a unit finishes casting this ability |
+#### This is a test.
 
+### Ability Events
+
+{: .vs-event }
+> <details><summary style="font-weight: 500; text-transform: uppercase; letter-spacing: 0.0em;">When a unit begins casting this ability</summary>TODO</details>
+
+{: .vs-event }
+> <details><summary style="font-weight: 500; text-transform: uppercase; letter-spacing: 0.0em;">When a unit finishes casting this ability</summary>TODO</details>
+
+### Time Events
+
+{: .vs-event }
+> <details><summary>On script loaded</summary>TODO</details>
+
+{: .vs-event }
+> <details><summary>On script unloaded</summary>TODO</details>
+
+{: .vs-event }
+> <details><summary>Do every frame</summary>TODO</details>
+
+{: .vs-event }
+> <details><summary>Do after X seconds</summary>TODO</details>
+
+{: .vs-event }
+> <details><summary>Do every X Seconds</summary>TODO</details>
+
+### Unit Events
+
+{: .vs-event }
+> <details><summary>Unit is killed</summary>TODO</details>
+
+{: .vs-event }
+> <details><summary>Unit is damaged</summary>TODO</details>
+
+{: .vs-event }
+> <details><summary>Unit is healed</summary>TODO</details>
+
+{: .vs-event }
+> <details><summary>Unit gains resource</summary>TODO</details>
+
+{: .vs-event }
+> <details><summary>Unit loses resource</summary>TODO</details>
+
+{: .vs-event }
+> <details><summary>When a unit starts casting specific ability</summary>TODO</details>
+
+{: .vs-event }
+> <details><summary>When a unit finishes casting specific ability</summary>TODO</details>
+
+
+
+|Time |
+| On Script Loaded | N/A |
+| On script unloaded <br> test | |
 
 
 | **Actions** |

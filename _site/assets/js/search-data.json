@@ -272,676 +272,704 @@
     
     "relUrl": "/_pages/documentation/class-unit.html"
   },"39": {
+    "doc": "Contribute",
+    "title": "Contributing to the Website",
+    "content": "You are encouraged to contribute to the website documentation by editing existing pages, or creating new pages (e.g., guides). Instructions for how to do this are given below. ",
+    "url": "/_pages/contribute.html#contributing-to-the-website",
+    
+    "relUrl": "/_pages/contribute.html#contributing-to-the-website"
+  },"40": {
+    "doc": "Contribute",
+    "title": "Website Architecture",
+    "content": "The website is written with Jekyll using the Just-the-Docs template and freely hosted with Github Pages. Jekyll allows you to create a website with simple markdown, with navigation and styling being handled automatically by your chosen template. The public Github repository for the website can be found here. The pages are automatically generated from the content of the repository. ",
+    "url": "/_pages/contribute.html#website-architecture",
+    
+    "relUrl": "/_pages/contribute.html#website-architecture"
+  },"41": {
+    "doc": "Contribute",
+    "title": "Making Changes via Pull Requests",
+    "content": "Updates to the site are handled via Pull Requests (PRs). PRs are an industry standard way of updating repositories in a safe and standardised way. To create a pull reuest, do the following: . | Fork the repository by going to the repository page and pressing the ‘Fork’ button in the top-right. | Give the forked repository a name, and then press the Create Fork button. | Clone the forked repository to your machine. | Create a new branch for the changes you are making. | Make any changes you would like to add to the site. | Commit the changes and push them to the forked repository. | Go to the forked repository on Github (the one you just pushed to). Select the ‘Pull requests’ tab, then click the ‘New pull request’ button. | On the left, select the main repository and the main branch. On the right, select the forked repository and the branch that has all of the changes you made. | Add a title and brief description describing the changes. | Click the “Create pull request” button to submit it for review. | Wait for the pull request to be accepted (or for a response to be given). | . ",
+    "url": "/_pages/contribute.html#making-changes-via-pull-requests",
+    
+    "relUrl": "/_pages/contribute.html#making-changes-via-pull-requests"
+  },"42": {
+    "doc": "Contribute",
+    "title": "Adding or Updating Pages",
+    "content": "The content for the website can be found in the _pages directory. All markdown files in this folder are automatically converted into website pages with correct navigation. For example, you can see the markdown that was used to generate this page here. The template page for the Just-the-Docs template has examples for all valid markdown you can use (e.g., callout boxes, code snippets, table of contents). Images should be uploaded to the _pages\\assets folder. ",
+    "url": "/_pages/contribute.html#adding-or-updating-pages",
+    
+    "relUrl": "/_pages/contribute.html#adding-or-updating-pages"
+  },"43": {
+    "doc": "Contribute",
+    "title": "Contribute",
+    "content": " ",
+    "url": "/_pages/contribute.html",
+    
+    "relUrl": "/_pages/contribute.html"
+  },"44": {
     "doc": "Code Documentation",
     "title": "Game Camera",
     "content": "The main scene in the ARPG contains only one main camera. ",
     "url": "/_pages/documentation/documentation.html#game-camera",
     
     "relUrl": "/_pages/documentation/documentation.html#game-camera"
-  },"40": {
+  },"45": {
     "doc": "Code Documentation",
     "title": "Repositioning the Camera",
     "content": "You can change the offset of the camera (including as its angle and distance from the player) by changing its location in the scene relative to the player. When the game starts, it will calculate the difference in location between the player and the camera and match this for the entire game. ",
     "url": "/_pages/documentation/documentation.html#repositioning-the-camera",
     
     "relUrl": "/_pages/documentation/documentation.html#repositioning-the-camera"
-  },"41": {
+  },"46": {
     "doc": "Code Documentation",
     "title": "Highlighting Points of Interest",
     "content": "You can highlight points of interest in the game, which will allow you to pan to the given location. This is an example page that uses the Just the Docs template. You can write Markdown here, or add custom HTML if needed. ",
     "url": "/_pages/documentation/documentation.html#highlighting-points-of-interest",
     
     "relUrl": "/_pages/documentation/documentation.html#highlighting-points-of-interest"
-  },"42": {
+  },"47": {
     "doc": "Code Documentation",
     "title": "Features",
     "content": ". | Clean layout | Responsive design | Easy to use | . Default label . Blue label . Stable . New release . Coming soon . Deprecated . ",
     "url": "/_pages/documentation/documentation.html#features",
     
     "relUrl": "/_pages/documentation/documentation.html#features"
-  },"43": {
+  },"48": {
     "doc": "Code Documentation",
     "title": "Code Documentation",
     "content": " ",
     "url": "/_pages/documentation/documentation.html",
     
     "relUrl": "/_pages/documentation/documentation.html"
-  },"44": {
+  },"49": {
     "doc": "Events",
     "title": "Game Events",
     "content": "While you are not required to write any code in the development of your experience, if you need to implement complex logic for an item, ability, quest, or other game mechanic, this section will show you how it can be done. This page will focus specifically on how you can build an item with custom logic. ",
     "url": "/_pages/documentation/events.html#game-events",
     
     "relUrl": "/_pages/documentation/events.html#game-events"
-  },"45": {
+  },"50": {
     "doc": "Events",
     "title": "Contents",
     "content": ". | Registering an Event Listener . | Callback Methods | Lamda Methods (In-line Logic) | . | Invoking an Event | Event List | . ",
     "url": "/_pages/documentation/events.html",
     
     "relUrl": "/_pages/documentation/events.html"
-  },"46": {
+  },"51": {
     "doc": "Events",
     "title": "Registering an Event Listener",
     "content": "All of the events listed below are Unity event variables that can be accessed through the GameManager.events object. There are two ways that this can be done: (1) using a callback method, or (2) using an in-line lambda function. An example using both methods is shown below, in which the player restores 10 health every time a unit is killed. Callback Methods . You can register to have a specific method (with a matching signature) run when the event you are listening for is fired. In this case, we are using the OnUnitKilled event, so the method must have a signature of OnUnitKilledInfo. This OnUnitKilledInfo object contains details related to the event which you may need to consider in your actions (e.g., the unit that was killed, the killing unit, the source of the kill, whether it was a critical hit etc). public class RestoreHealthOnKillExample : MonoBehaviour { void Start() { GameManager.events.OnUnitKilled.AddListener(OnKillActions); } private void OnKillActions (OnUnitKilledInfo info) { GameManager.player.AddHealth(10); } } . Lamda Methods (In-line Logic) . Rather than creating a specific method with the correct signature to handle the logic, you can instead define the logic for the event listener in-line using a lambda function. In this example, whenever a unit is killed, the player will restore 10 health. This can save some space and make some logic easier to understand, but it can make the logic much harder to manipulate if you need to later de-register this event. For example, if this method should only be registered when an item is equipped, it will be more awkward to deregister it if the item is ever unequipped. public class RestoreHealthOnKillExample : MonoBehaviour { void Start() { GameManager.events.OnUnitKilled.AddListener(info =&gt; { GameManager.player.AddHealth(10); }); } } . ",
     "url": "/_pages/documentation/events.html#registering-an-event-listener",
     
     "relUrl": "/_pages/documentation/events.html#registering-an-event-listener"
-  },"47": {
+  },"52": {
     "doc": "Events",
     "title": "Invoking an Event",
     "content": "It is unlikely you will need to do this, but if you need to trigger an event (rather than listen for an event occuring), you can manually invoke the event. To this with Unity Events, you use the Invoke method with an object of the correct type. For example, if you wanted to invoke the OnPlayerLevelUp event, you could invoke it by doing the following: . // Create the container storing all of the information. OnPlayerLevelUpInfo info = new OnPlayerLevelUpInfo(); // Populate all of the information needed for the container. info.player = GameManager.player; info.playerLevel = GameManager.player.level; // Invoke the event with the specified information. GameManager.events.OnPlayerLevelUp.Invoke(info); . ",
     "url": "/_pages/documentation/events.html#invoking-an-event",
     
     "relUrl": "/_pages/documentation/events.html#invoking-an-event"
-  },"48": {
+  },"53": {
     "doc": "Events",
     "title": "Event List",
     "content": "Below provides a comprehensive list of all events used by the game, and the properties given related to each event. OnEventMessageReceived . This event can be used to broadcast generic messages to the entire game. This is intended to help send messages to the visual scripting system from coding (e.g., if your experience requires custom logic that is not handled by default). | Type | Variable | Description | . | string | messageText | The content of the message sent. | . OnAbilityCastStarted . This event is fired whenever a unit starts casting an ability. This event is fired with an OnAbilityCastStartedInfo object with the following variables: . | Type | Variable | Description | . | Unit | castingUnit | The unit casting the ability. | . | Ability | ability | The ability being cast. | . | Unit | targetUnit | The target of the ability (null if no target). | . | Vector3 | targetPosition | The target position of the ability. | . OnAbilityCastFinished . This event is fired whenever a unit finishes casting an ability. This event is fired with an OnAbilityCastFinishedInfo object with the following variables: . | Type | Variable | Description | . | Unit | castingUnit | The unit casting the ability. | . | Ability | ability | The ability being cast. | . | Unit | targetUnit | The target of the ability (null if no target). | . | Vector3 | targetPosition | The target position of the ability. | . OnUnitGainsBuff . This event is fired whenever a unit gains a buff/debuff. This event is fired with an OnUnitGainsBuffInfo object with the following variables: . | Type | Variable | Description | . | Unit | unitGainingBuff | The Unit that has gained the buff. | . | string | buffName | The name of the buff. | . | Unit | unitApplyingBuff | The unit that applied the buff. This can be null if it wasn’t applied by a unit. | . OnUnitLosesBuff . This event is fired whenever a unit loses a buff/debuff. This event is fired with an OnUnitLosesBuffInfo object with the following variables: . | Type | Variable | Description | . | Unit | unitGainingBuff | The Unit that has lost the buff. | . | string | buffName | The name of the buff. | . | Unit | unitApplyingBuff | The unit that applied the buff. This can be null if it wasn’t applied by a unit. | . OnUnitRefreshesBuff . This event is fired whenever a unit refreshes a buff/debuff. This event is fired with an OnUnitRefreshesBuffInfo object with the following variables: . | Type | Variable | Description | . | Unit | unitWithBuff | The Unit that has the buff. | . | string | buffName | The name of the buff. | . | Unit | unitApplyingBuff | The unit that applied the buff. This can be null if it wasn’t applied by a unit. | . OnUnitKilled . This event is fired whenever a unit is killed. This event is fired with an OnUnitKilledInfo object with the following variables: . | Type | Variable | Description | . | Unit | killedUnit | The Unit that was killed. | . | Unit | killingUnit | The unit that killed the killed unit. | . | bool | isCrit | Whether the effect that killed the unit was a critical strike. | . | IVisualCodeHandler | killingSource | The source that killed the unit (an ability, an item, etc). | . OnPlayerKilled . This event is fired whenever the player is killed. This event is fired with an OnPlayerKilledInfo object with the following variables: . | Type | Variable | Description | . | Unit | killedUnit | The Unit that was killed. | . | Unit | killingUnit | The unit that killed the killed unit. | . | bool | isCrit | Whether the effect that killed the unit was a critical strike. | . | IVisualCodeHandler | killingSource | The source that killed the unit (an ability, an item, etc). | . OnPlayerExperienceGained . This event is fired whenever the player gains experience. This event is fired with an OnPlayerExperienceGainedInfo object with the following variables: . | Type | Variable | Description | . | Player | player | The player that gained experience. | . | float | experienceGained | The amount of experience gained. | . OnPlayerLevelUp . This event is fired whenever the player gains a level. This event is fired with an OnPlayerLevelUpInfo object with the following variables: . | Type | Variable | Description | . | Player | player | The player that gained a level. | . | int | playerLevel | The new level of the player. | . OnPlayerEnteredRegion . This event is fired whenever a unit enters a region. This event is fired with an OnPlayerEnteredRegionInfo object with the following variables: . | Type | Variable | Description | . | Unit | enteringUnit | The unit that entered the region. | . | Region | region | The region that was entered. | . | string | regionName | The name of the region that was entered. | . OnPlayerExistsRegion . This event is fired whenever a unit exits a region. This event is fired with an OnPlayerExistsRegionInfo object with the following variables: . | Type | Variable | Description | . | Unit | exitingUnit | The unit that exited the region. | . | Region | region | The region that was exited. | . | string | regionName | The name of the region that was exited. | . OnUnitDamaged . This event is fired whenever a unit is damaged. This event is fired with an OnUnitDamagedInfo object with the following variables: . | Type | Variable | Description | . | Unit | damagedUnit | The unit that was damaged. | . | Unit | damagingUnit | The unit that did the damage. | . | bool | isCritical | Whether the damage dealt was a critical hit. | . | float | damage | The amount of damage that was dealt. | . | IVisualCodeHandler | damageSource | The source that did the damage (an ability, an item etc). | . OnUnitSpawned . This event is fired whenever a unit is spawned. This event is fired with an OnUnitSpawnedInfo object with the following variables: . | Type | Variable | Description | . | Unit | spawnedUnit | The unit that was spawned. | . | Unit | spawningUnit | The unit that spawned the unit. Can be null if it was not spawned by a unit. | . OnGoldAdded . This event is fired whenever the player gains gold. This event is fired with an OnGoldAddedInfo object with the following variables: . | Type | Variable | Description | . | float | goldAdded | The amount of gold that was added. | . OnGoldRemoved . This event is fired whenever the player loses gold. This event is fired with an OnGoldRemovedInfo object with the following variables: . | Type | Variable | Description | . | float | goldRemoved | The amount of gold that was removed. | . OnGoldPickedUp . This event is fired whenever the player picks up gold. This event is fired with an OnGoldPickedUpInfo object with the following variables: . | Type | Variable | Description | . | float | goldPickedUp | The amount of gold that was picked up. | . OnHealthPickedUp . This event is fired whenever the player picks up a health globe. This event is fired with an OnHealthPickedUpInfo object with the following variables: . | Type | Variable | Description | . | float | healthPickedUp | The amount of health that was picked up. | . OnItemEquipped . This event is fired whenever the player equips an item. This event is fired with an OnItemEquippedInfo object with the following variables: . | Type | Variable | Description | . | Item | itemEquipped | The item that was equipped. | . OnItemUnequipped . This event is fired whenever the player unequips an item. This event is fired with an OnItemUnequippedInfo object with the following variables: . | Type | Variable | Description | . | Item | itemUnequipped | The item that was unequipped. | . OnItemSold . This event is fired whenever the player sells an item. This event is fired with an OnItemSoldInfo object with the following variables: . | Type | Variable | Description | . | Item | itemSold | The item that was sold. | . OnQuestUpdated . This event is fired whenever a quest is updated. This event is fired with an OnQuestUpdatedInfo object with the following variables: . | Type | Variable | Description | . | Quest | questUpdated | The quest that was updated. | . OnQuestCompleted . This event is fired whenever a quest is completed. This event is fired with an OnQuestCompletedInfo object with the following variables: . | Type | Variable | Description | . | Quest | questCompleted | The quest that was completed. | . OnQuestAdded . This event is fired whenever a quest is added to the quest system. This event is fired with an OnQuestAddedInfo object with the following variables: . | Type | Variable | Description | . | Quest | questAdded | The quest that was added. | . OnGameWon . This event is fired whenever the player wins the game. This event is fired with an OnGameWonInfo object with the following variables: . | Type | Variable | Description | . | Player | player | The player that won the game. | . ",
     "url": "/_pages/documentation/events.html#event-list",
     
     "relUrl": "/_pages/documentation/events.html#event-list"
-  },"49": {
+  },"54": {
     "doc": "Events",
     "title": "Events",
     "content": " ",
     "url": "/_pages/documentation/events.html",
     
     "relUrl": "/_pages/documentation/events.html"
-  },"50": {
+  },"55": {
     "doc": "Game Manager",
     "title": "The Game Manager",
     "content": "While you are not required to write any code in the development of your experience, if you need to implement complex logic for an item, ability, quest, or other game mechanic, this section will show you how it can be done. This page will focus specifically on how you can build an item with custom logic. The experience can be developed without any code, but if you do want to use code to develop your items, abilities, quests or other content to control complex logic which cannot easi . ",
     "url": "/_pages/documentation/game-manager.html#the-game-manager",
     
     "relUrl": "/_pages/documentation/game-manager.html#the-game-manager"
-  },"51": {
+  },"56": {
     "doc": "Game Manager",
     "title": "Contents",
     "content": ". | The Game Manager . | Unit Logic . | Ability Selection | Target Selection | Unit Range | . | Public Methods . | Modifying Unit Health | Modifying Unit Resources | Modifying Unit Abilities | Checking Unit Statuses | Moving a Unit | Visual Effects | Applying a Buff | Modifying a Stat | Modifying a Specific Unit Ability | Damaging a Unit | . | Download the Model | Import the Mixamo Model | Importing Mixamo Animations | Features | . | . ",
     "url": "/_pages/documentation/game-manager.html",
     
     "relUrl": "/_pages/documentation/game-manager.html"
-  },"52": {
+  },"57": {
     "doc": "Game Manager",
     "title": "Unit Logic",
     "content": "Ability Selection . Non-player units will constantly try to . Target Selection . Unit Range . Unit . ",
     "url": "/_pages/documentation/game-manager.html#unit-logic",
     
     "relUrl": "/_pages/documentation/game-manager.html#unit-logic"
-  },"53": {
+  },"58": {
     "doc": "Game Manager",
     "title": "Public Methods",
     "content": "You can interact with units via the public methods. These allow you to modify unit stats, visuals, and other key properties. Modifying Unit Health . // Add 100 to the unit's current health. unit.AddHealth(100); // Remove 100 from the unit's current health. unit.RemoveHealth(100); . Modifying Unit Resources . // Add 100 to the unit's current resource count. unit.AddResource(100); // Remove 100 from the unit's current resource count. unit.RemoveResource(100); . Modifying Unit Abilities . // Add the specified ability to the unit. unit.AddAbility(abilityTemplate); // Remove the specified ability from the unit. unit.RemoveAbility(abilityTemplate); // Replace the current specified ability with the specified ability. If the unit does // not have the 'current' ability, they will not get the new ability. unit.ReplaceAbility(currentAbilityTemplate, newAbilityTemplate); // Lock the given ability, preventing the unit from casting it. If the unit does not // have an ability with a matching template, this will do nothing. unit.LockAbility(abilityTemplate); // Unlock the given ability, allowing the unit to cast it. If the unit does not // have an ability with a matching template, this will do nothing. unit.UnlockAbility(abilityTemplate); . Checking Unit Statuses . // Check to see if the unit is currently stunned. bool isStunned = unit.IsStunned(); // Check to see if the unit is currently moving. bool isMoving = unit.IsMoving(); // Check to see if the unit is currently casting an ability. bool isCasting = unit.IsCasting(); // Check to see if the specified unit is an enemy of the unit. bool isEnemy = unit.IsEnemy(unitToCompare); // Check to see if the specified unit is an ally of the unit. bool isAlly = unit.IsAlly(unitToCompare); // Check to see if the unit has a specific buff/debuff. bool hasBuff = unit.HasBuff(\"NameOfBuff\"); // Check to see if the unit is currently able to move. bool canMove = unit.CanMove(); . Moving a Unit . // Instantly move the unit to the specified location. unit.Teleport(newPosition); // Smoothly move the unit to the specified location in the specified amount of time. unit.MoveOverTime(newPosition, timeToReachDestination); . Visual Effects . // Set the outline colour for the unit. unit.SetOutline(Color.red); // Set the outline colour and size for the unit. unit.SetOutline(Color.red, outlineSize, outlineAlpha); // Have the unit play the specified animation (the name must match a node in the Animator). unit.PlayAnimation(\"AnimationName\"); // Rotate the unit by the given amount (in degrees) over the given duration. unit.StartSpin(degreesToRotate, duration); . Applying a Buff . // Set the outline colour for the unit. unit.SetOutline(Color.red); // Set the outline colour and size for the unit. unit.SetOutline(Color.red, outlineSize, outlineAlpha); // Have the unit play the specified animation (the name must match a node in the Animator). unit.PlayAnimation(\"AnimationName\"); // Rotate the unit by the given amount (in degrees) over the given duration. unit.StartSpin(degreesToRotate, duration); . Modifying a Stat . // Permanently modifies the movement speed of the unit. In this case, // it will increase the movement speed of the unit by 20%. // // Valid Stats include: // - Damage // - MaxHealth // - MaxResource // - CriticalStrikeChance // - CriticalStrikeDamage // - Armor // - AttacksPerSecond // - CooldownReduction // - MovementSpeed // - ResourceCostReduction // - ResourceGeneration unit.stats[Stat.MovementSpeed].AddPercentageModifier(1.2f); // Temporarily modifies the movement speed of the unit. In this case, // it will increase the movement speed of the unit by 20% for 10 seconds. unit.stats[Stat.MovementSpeed].AddTimedPercentageModifier(1.2f, 10.0f); // A buff name can also be given when applying a buff or debuff. This lets you // reference it later if you want to remove or modify it (e.g., an ability may // give the player a movement speed boost until they next take damage). unit.stats[Stat.MovementSpeed].AddPercentageModifier(1.2f, \"Sprint\"); // If a buff name is given, a maximum number of buff 'stacks' can also be specified. // This limits how many times this effect can be applied to the unit. In this case, // the unit can have three sprint modifiers applied (resulting in a 60% speed increase). unit.stats[Stat.MovementSpeed].AddPercentageModifier(1.2f, \"Sprint\", 3); // This method can be used to remove all existing modifiers with a matching label. unit.stats[Stat.Damage].RemoveModifiersWithLabel(\"Sprint\"); // A stat modifier can also be a specific value, rather than a percentage. In this case, // the base damage of all attacks is increased by 5 instead of a percentage modifier. unit.stats[Stat.Damage].AddValueModifier(5); . Modifying a Specific Unit Ability . // Modifies the damage of the specified ability on the specified unit. // In this example, the ability would do 50% more damage. unit.AddAbilityDamageModifier(ability, 1.5f); // Modifies the cooldown of the specified ability on the specified unit. // In this example, the ability cooldown will be reduced by 50%. unit.AddAbilityCooldownModifier(ability, 0.5f); // Modifies the cost of the specified ability on the specified unit. // In this example, the ability would be reduced to 10% of its current cost. unit.AddAbilityCostModifier(ability, 0.1f); // Just like with stat modifiers, the ability modifiers can also be timed. // In this example, the ability would deal double damage for five seconds. unit.AddTimedAbilityDamageModifier(ability, 2.0f, 5.0f); // Just like with stat modifiers, the ability modifiers can also be given a // reference name, and a maximum stack count. unit.AddTimedAbilityDamageModifier(ability, 2.0f, 5.0f, \"Frenzy\", 1); // Use this method to remove all ability modifiers from an ability which have // the given reference name (e.g., this would remove the frenzy buff in the previous example). unit.RemoveAbilityBuffModifiers(ability, \"Frenzy\"); . Damaging a Unit . // Javascript code with syntax highlighting. var fun = function lang(l) { dateformat.i18n = require('./lang/' + l) return true; } . ",
     "url": "/_pages/documentation/game-manager.html#public-methods",
     
     "relUrl": "/_pages/documentation/game-manager.html#public-methods"
-  },"54": {
+  },"59": {
     "doc": "Game Manager",
     "title": "Download the Model",
     "content": ". | Go to Mixamo. | Log in, or create a new account if you do not already have one. | Select or upload your character model. | Customize the animation if needed by selecting from the animations available. | Click the Download button. | Choose the following options for Unity: . | Format: FBX for Unity. | Pose: T-Pose. | Animation: If you want to include the animation, make sure it’s selected. | Skin: With Skin. | . | Click the Download button in the popup. | . ",
     "url": "/_pages/documentation/game-manager.html#download-the-model",
     
     "relUrl": "/_pages/documentation/game-manager.html#download-the-model"
-  },"55": {
+  },"60": {
     "doc": "Game Manager",
     "title": "Import the Mixamo Model",
     "content": ". | Open your Unity project. | In the Project window, navigate to the folder you want to import the model into. | Drag the downloaded FBX file into the Unity folder, or right-click and select Import New Asset to locate and import the file manually. | Once imported, select the model in the Project window. | In the Inspector, go to the Model tab and ensure the Animation Type is set to Humanoid (for human-like characters) or Generic (for other types of models). | Under the Material section, if you’re using the legacy shader, check Import Materials and Use Legacy Materials to ensure proper texture mapping. This will help the model use the correct materials that were imported with the FBX. | Click Apply. | . ",
     "url": "/_pages/documentation/game-manager.html#import-the-mixamo-model",
     
     "relUrl": "/_pages/documentation/game-manager.html#import-the-mixamo-model"
-  },"56": {
+  },"61": {
     "doc": "Game Manager",
     "title": "Importing Mixamo Animations",
     "content": ". | Go to Mixamo.com. | Log in, or create a new account if you do not already have one. | . Mixamo models use different avatars for defining animations. This means that an animation shown on one character may not look correct if it is applied to a different character. If you encounter this problem, you should use a T-Pose for the avatar instead. dfgdfgdfg . ",
     "url": "/_pages/documentation/game-manager.html#importing-mixamo-animations",
     
     "relUrl": "/_pages/documentation/game-manager.html#importing-mixamo-animations"
-  },"57": {
+  },"62": {
     "doc": "Game Manager",
     "title": "Features",
     "content": ". | Clean layout | Responsive design | Easy to use | . Default label . Blue label . Stable . New release . Coming soon . Deprecated . ",
     "url": "/_pages/documentation/game-manager.html#features",
     
     "relUrl": "/_pages/documentation/game-manager.html#features"
-  },"58": {
+  },"63": {
     "doc": "Game Manager",
     "title": "Game Manager",
     "content": " ",
     "url": "/_pages/documentation/game-manager.html",
     
     "relUrl": "/_pages/documentation/game-manager.html"
-  },"59": {
+  },"64": {
     "doc": "General Editor",
     "title": "General Editor",
     "content": "The general editor in the visual coding system allows you to add general logic to your experience, that isn’t specific to an ability, item, or other specific component. It can be used to create bespoke tutorialisation, events, or custom gameplay logic that your experience may require. ",
     "url": "/_pages/visual-coding/general-editor.html",
     
     "relUrl": "/_pages/visual-coding/general-editor.html"
-  },"60": {
+  },"65": {
     "doc": "General Editor",
     "title": "Contents",
     "content": ". ",
     "url": "/_pages/visual-coding/general-editor.html",
     
     "relUrl": "/_pages/visual-coding/general-editor.html"
-  },"61": {
+  },"66": {
     "doc": "Changing the Controls",
     "title": "Changing the Controls",
     "content": "In this guide, you will learn how to change the default controls for the experience. ",
     "url": "/_pages/guides/guide-controls.html",
     
     "relUrl": "/_pages/guides/guide-controls.html"
-  },"62": {
+  },"67": {
     "doc": "Changing the Controls",
     "title": "Contents",
     "content": ". | Changing the Controls | . ",
     "url": "/_pages/guides/guide-controls.html",
     
     "relUrl": "/_pages/guides/guide-controls.html"
-  },"63": {
+  },"68": {
     "doc": "Creating an Ability",
     "title": "Creating an Ability",
     "content": "In this guide, you will learn how to create and implement abilities into your experience. ",
     "url": "/_pages/guides/guide-createability.html",
     
     "relUrl": "/_pages/guides/guide-createability.html"
-  },"64": {
+  },"69": {
     "doc": "Creating an Ability",
     "title": "Contents",
     "content": ". | Creating an Ability | . ",
     "url": "/_pages/guides/guide-createability.html",
     
     "relUrl": "/_pages/guides/guide-createability.html"
-  },"65": {
+  },"70": {
     "doc": "Creating an Item",
     "title": "Creating an Item",
     "content": "In this guide, you will learn how to create and implement items into your experience. ",
     "url": "/_pages/guides/guide-createitem.html",
     
     "relUrl": "/_pages/guides/guide-createitem.html"
-  },"66": {
+  },"71": {
     "doc": "Creating an Item",
     "title": "Contents",
     "content": ". | Creating an Item | . ",
     "url": "/_pages/guides/guide-createitem.html",
     
     "relUrl": "/_pages/guides/guide-createitem.html"
-  },"67": {
+  },"72": {
     "doc": "Creating a Monster",
     "title": "Creating an Item",
     "content": "In this guide, you will learn how to create and implement custom monsters into your experience. ",
     "url": "/_pages/guides/guide-createmonster.html#creating-an-item",
     
     "relUrl": "/_pages/guides/guide-createmonster.html#creating-an-item"
-  },"68": {
+  },"73": {
     "doc": "Creating a Monster",
     "title": "Contents",
     "content": ". | Creating an Item | . ",
     "url": "/_pages/guides/guide-createmonster.html",
     
     "relUrl": "/_pages/guides/guide-createmonster.html"
-  },"69": {
+  },"74": {
     "doc": "Creating a Monster",
     "title": "Creating a Monster",
     "content": " ",
     "url": "/_pages/guides/guide-createmonster.html",
     
     "relUrl": "/_pages/guides/guide-createmonster.html"
-  },"70": {
+  },"75": {
     "doc": "Creating a Custom Character",
     "title": "Creating an Item",
     "content": "In this guide, you will learn how to create and implement a custom player character into your experience. ",
     "url": "/_pages/guides/guide-createplayer.html#creating-an-item",
     
     "relUrl": "/_pages/guides/guide-createplayer.html#creating-an-item"
-  },"71": {
+  },"76": {
     "doc": "Creating a Custom Character",
     "title": "Contents",
     "content": ". | Creating an Item | . ",
     "url": "/_pages/guides/guide-createplayer.html",
     
     "relUrl": "/_pages/guides/guide-createplayer.html"
-  },"72": {
+  },"77": {
     "doc": "Creating a Custom Character",
     "title": "Creating a Custom Character",
     "content": " ",
     "url": "/_pages/guides/guide-createplayer.html",
     
     "relUrl": "/_pages/guides/guide-createplayer.html"
-  },"73": {
+  },"78": {
     "doc": "Creating a Quest",
     "title": "Creating a Quest",
     "content": "In this guide, you will learn how to create and implement custom quests into your experience. ",
     "url": "/_pages/guides/guide-createquest.html",
     
     "relUrl": "/_pages/guides/guide-createquest.html"
-  },"74": {
+  },"79": {
     "doc": "Creating a Quest",
     "title": "Contents",
     "content": ". | Quest Overview . | Quest Logic | Defining the Quest Logic | . | Quest Examples . | Example Quest #1: Slay the Undead | Example Quest #2: Purchase an Item | Example Quest #3: Armor Up | . | . ",
     "url": "/_pages/guides/guide-createquest.html",
     
     "relUrl": "/_pages/guides/guide-createquest.html"
-  },"75": {
+  },"80": {
     "doc": "Creating a Quest",
     "title": "Quest Overview",
     "content": "Creating a quest requires you to specify four pieces of information: . | A quest name, | A quest description, | A list of quest requirements, | (optional) A quest reward. | . The information you specify here will be used to show the quest to their player in their active quest log. For each quest requirement, you must specify a requirement name and a number of progress increments. The progress increments keep track of quest progress. For example, if a quest requires you to kill 20 monsters, the requirement will have 20 progress increments, with the progress increments indicating how many monsters you have killed. Similarly, if a quest requires you to cast an ability 5 times, the increments would count how many times you have cast it. If a quest does not have incremental progress (e.g., killing a boss), it should have a single increment. This increment will not be shown to the player. Quest Logic . When the progress increment count matches the requirement (e.g., the quest has 5 progress increments and the player is at the fifth increment), that requirement is now complete. If all quest requirements on a quest are complete, the quest automatically completes. Defining the Quest Logic . A quest is usually defined in three visual scripts: . | Quest Received: Handles the creation of the quest when the necessary events occur. | Quest Updated: Handles updates to quest progress when the necessary events occur. | Quest Completed: Handles any quest reward actions when the quest is completed. | . ",
     "url": "/_pages/guides/guide-createquest.html#quest-overview",
     
     "relUrl": "/_pages/guides/guide-createquest.html#quest-overview"
-  },"76": {
+  },"81": {
     "doc": "Creating a Quest",
     "title": "Quest Examples",
     "content": "To help you better understand how to create quests, the logic for creating three example quests are given below. Example Quest #1: Slay the Undead . The first example quest aims to show you how to handle basic quest setup and progress tracking. When the player first kills a monster, they will be given a quest asking them to kill 15 more monsters. As they kill monsters, quest progress will increment until they have killed all 15, at which point the quest will automatically be completed. To create this quest, follow all of the steps below: . | Open the Visual Scripting Windows (IGB190 &gt; Open Custom Windows). Go to the Gameplay Editor tab. | In the Game Logic header in the top-left corner, create a new script group. Name it ‘Quest - Slay the Undead’. | Rename the ‘Main’ script to ‘Quest Start’ (Right Click &gt; Rename). | Add a new Event (press the red + in the Events header). Select the Unit &gt; Unit is killed event. | Add another new Action to this script, selecting the Quests &gt; Create Quest action. Set the Quest Name to ‘Slay the Undead’. | Add another new Action to this script, selecting the Quests &gt; Add Quest Requirement action. Set the Requirement to ‘Put the Dead to Rest’, the Quest Name to ‘Slay the Undead’, and the Increments to 15. | Add a final Action to this script, selecting the Flow &gt; Disable This Script action. This will ensure that the quest is only ever given to the player once. | Create a new script by pressing the Create New’` button at the top of the window. Name the new script ‘Quest Progress’. | Add a new Event to this script (press the red ‘+’ in the ‘Events’ header). Select the Unit &gt; Unit is killed event. | Add a new Condition (press the green ‘+’ in the ‘Events’ header). Select the Quest &gt; Quest Is Active condition. Set the Quest Name block to ‘Slay the Undead’ (this must match the name you used earlier). | Add an Action to this script, selecting the Quests &gt; Modify Quest Progress action. Set the Quest Name to ‘Slay the Undead’. This will increment the current progress for the quest (in this case, this represents the number of monsters killed). When the current quest progress matches the required quest increments, the quest automatically completes. | . Example Quest #2: Purchase an Item . The second example quest will prompt the player to purchase an item, and will hopefully encourage them to interact with the shop more throughout the experience. The quest will be given to the player if they pick up gold and have enough to make a purchase (in this case, 2500 gold). Then, the quest will be completed when they next purchase an item. Completing the quest will reward 500 gold. The steps to implement this example quest are as follows: . | Open the Visual Scripting Windows (IGB190 &gt; Open Custom Windows). Go to the Gameplay Editor tab. | In the Game Logic header in the top-left corner, create a new script group. Name it Quest - Purchase Item. | Rename the ‘Main’ script to ‘Quest Start’ (Right Click &gt; Rename). | Add a new Event (press the red ‘+’ in the ‘Events’ header). Select the Player &gt; Player picks up gold event. | Add a new Condition (press the green ‘+’ in the ‘Events’ header). Select the Comparisons &gt; Number Comparison condition. In the first Number slot, select Player &gt; Player Gold. For the comparison, choose Greater Than or Equal To. In the second Number slot, enter ‘2500’. | Add another new Action to this script, selecting the Quests &gt; Create Quest action. Set the Quest Name to ‘Spend Your Riches’. | Add another new Action to this script, selecting the Quests &gt; Add Quest Requirement action. Set the Requirement to ‘Purchase an Item’ and the Quest Name to ‘Spend Your Riches’. | Add another new Action to this script, selecting the Quests &gt; Add Quest Reward action. Set the Reward to ‘500 Gold’ and the Quest Name to ‘Spend Your Riches’. (Note: This only adds the reward to the quest label visible to the player, you need to manually provide the rewards yourself).\\ . | Finally, add a final Action to this script, selecting the Flow &gt; Disable This Script action. This will ensure that the quest is only ever given to the player once. | Create a new script by pressing the ‘Create New’ button at the top of the window. Name the new script “Quest Completed”. | Add a new Event to this script (press the red ‘+’ in the ‘Events’ header). Select the Player &gt; Player buys an item event. | Add a new Condition (press the green ‘+’ in the ‘Events’ header). Select the Quest &gt; Quest Is Active condition. Set the Quest Name block to “Spend Your Riches”. | Add an Action to this script, selecting the Quests &gt; Modify Quest Progress action. Set the Quest Name block to “Spend Your Riches”. | Add an Action to this script, selecting the Player &gt; Add Gold action. Set the Number to 500. | Add an Action to this script, selecting the Flow &gt; Disable This Script action. | . Example Quest #3: Armor Up . The third example quest will prompt the player to equip an item in every slot. This aims to remind players that they need to equip items. This quest has six ‘progress increments’ as the player can equip six items at a time. Whenever the player equips or unequips an item, the quest progress will update to match the current number of items the player has equipped. If the player has items equipped in all six slots, the quest will complete and the player will be given the gold reward. The steps to implement this example quest are as follows: . | Open the Visual Scripting Windows (IGB190 &gt; Open Custom Windows). Go to the Gameplay Editor tab. | In the Game Logic header in the top-left corner, create a new script group. Name it Quest - Armor Up . | Rename the ‘Main’ script to ‘Quest Start’ (Right Click &gt; Rename). | Add a new Event (press the red ‘+’ in the ‘Events’ header). Select the Player &gt; Player equips an item event. | Add another new Action to this script, selecting the Quests &gt; Create Quest action. Set the Quest Name to ‘Armor Up’. | Add another new Action to this script, selecting the Quests &gt; Add Quest Requirement action. Set the Requirement to ‘Equip Items in All Slots’, the Quest Name to ‘Armor Up’, and the increments to 6. | Add another new Action to this script, selecting the Quests &gt; Add Quest Reward action. Set the Reward to ‘1000 Gold’ and the Quest Name to ‘Armor Up’. | Finally, add a final Action to this script, selecting the Flow &gt; Disable This Script action. This will ensure that the quest is only ever given to the player once. | Create a new script by pressing the ‘Create New’ button at the top of the window. Name the new script “Quest Progress”. | Add a new Event to this script (press the red ‘+’ in the ‘Events’ header). Select the Player &gt; Player equips an item event. | Add a new Event to this script (press the red ‘+’ in the ‘Events’ header). Select the Player &gt; Player unequips an item event. This will ensure the script runs whenever an item is equipped or unequipped (i.e., the player equipment changes in any way). | Add a new Condition (press the green ‘+’ in the ‘Events’ header). Select the Quest &gt; Quest Is Active condition. Set the Quest Name block to “Armor Up”. | Add an Action to this script, selecting the Quests &gt; Set Quest Progress action. Set the Quest Name to “Armor Up”. Set the Number to Players &gt; Items Equipped. This will update the quest progress to match the number of items equipped (e.g., if the player has three items equipped it will show as 3/6 items equipped). | Create a new script by pressing the ‘Create New’ button at the top of the window. Name the new script “Quest Completed”. | Add a new Event to this script (press the red ‘+’ in the ‘Events’ header). Select the Quests &gt; On quest completed event. Set the Quest Name to ‘Armor Up’. | Add an Action to this script, selecting the Player &gt; Add Gold action. Set the Number to 1000. | . ",
     "url": "/_pages/guides/guide-createquest.html#quest-examples",
     
     "relUrl": "/_pages/guides/guide-createquest.html#quest-examples"
-  },"77": {
+  },"82": {
     "doc": "Creating Environment Tiles",
     "title": "Creating an Item",
     "content": "In this guide, you will learn how to create and implement custom environmental tiles into your experience. ",
     "url": "/_pages/guides/guide-createtile.html#creating-an-item",
     
     "relUrl": "/_pages/guides/guide-createtile.html#creating-an-item"
-  },"78": {
+  },"83": {
     "doc": "Creating Environment Tiles",
     "title": "Contents",
     "content": ". | Creating an Item | . ",
     "url": "/_pages/guides/guide-createtile.html",
     
     "relUrl": "/_pages/guides/guide-createtile.html"
-  },"79": {
+  },"84": {
     "doc": "Creating Environment Tiles",
     "title": "Creating Environment Tiles",
     "content": " ",
     "url": "/_pages/guides/guide-createtile.html",
     
     "relUrl": "/_pages/guides/guide-createtile.html"
-  },"80": {
+  },"85": {
     "doc": "Optimising the Game",
     "title": "Optimising the Game",
     "content": "In this guide, you will learn how to optimise the performance of the game, improving the frame rate of the experience for users. ",
     "url": "/_pages/guides/guide-optimising.html",
     
     "relUrl": "/_pages/guides/guide-optimising.html"
-  },"81": {
+  },"86": {
     "doc": "Optimising the Game",
     "title": "Contents",
     "content": ". | Optimising the Game | . ",
     "url": "/_pages/guides/guide-optimising.html",
     
     "relUrl": "/_pages/guides/guide-optimising.html"
-  },"82": {
+  },"87": {
     "doc": "Set Dressing an Environment",
     "title": "Set Dressing an Environment",
     "content": "In this guide, you will learn how to set dress an environment to make the space feel more natural and unique. This is especially beneficial when the space has been created using a small set of generic tiles. ",
     "url": "/_pages/guides/guide-setdressing.html",
     
     "relUrl": "/_pages/guides/guide-setdressing.html"
-  },"83": {
+  },"88": {
     "doc": "Set Dressing an Environment",
     "title": "Contents",
     "content": ". | Set Dressing an Environment | . ",
     "url": "/_pages/guides/guide-setdressing.html",
     
     "relUrl": "/_pages/guides/guide-setdressing.html"
-  },"84": {
+  },"89": {
     "doc": "Theming",
     "title": "Set Dressing an Environment",
     "content": "In this guide, you will learn how to set dress an environment to make the space feel more natural and unique. This is especially beneficial when the space has been created using a small set of generic tiles. ",
     "url": "/_pages/guides/guide-theming.html#set-dressing-an-environment",
     
     "relUrl": "/_pages/guides/guide-theming.html#set-dressing-an-environment"
-  },"85": {
+  },"90": {
     "doc": "Theming",
     "title": "Contents",
     "content": ". | Set Dressing an Environment | . ",
     "url": "/_pages/guides/guide-theming.html",
     
     "relUrl": "/_pages/guides/guide-theming.html"
-  },"86": {
+  },"91": {
     "doc": "Theming",
     "title": "Theming",
     "content": " ",
     "url": "/_pages/guides/guide-theming.html",
     
     "relUrl": "/_pages/guides/guide-theming.html"
-  },"87": {
+  },"92": {
     "doc": "Guides",
     "title": "Guides",
     "content": "The monster class controls the logic for all non-player units that are controlled by the AI system. The Monster class inherits from the Unit class, so all Unit methods and logic apply to the monsters as well. ",
     "url": "/_pages/guides/guides.html",
     
     "relUrl": "/_pages/guides/guides.html"
-  },"88": {
+  },"93": {
     "doc": "Home",
-    "title": "Welcome to the Info Page 2",
-    "content": "This is an example page that uses the Just the Docs template. You can write Markdown here, or add custom HTML if needed. ",
-    "url": "/#welcome-to-the-info-page-2",
+    "title": "IGB190 Documentation",
+    "content": "This website is intended to provide some helpful guides and resources for the unit IGB190: Game Mechanics Implementation. In this unit, you will be using the provided tools and packages to build a 10-minute action role-playing game (ARPG). The experience will have a custom player-character, a variety of custom abilities, a selection of item sets with custom abilities, enemies, tilemaps, quests and more. To help you do this, you will be contributing to a partially-completed project which has many of the core systems already set up. This website aims to help you better understand these systems, and how you can use them to build your intended experience. Areas you may wish to explore include: . | Guides: Contains a variety of helpful guides aimed at teaching the basics of various topics. | Visual Coding: An overview of the visual coding system available in the experience for creating abilities, items, quests, and general game logic (such as tutorials and bespoke events). | Resources: Contains helpful resources that will help you develop your project. | Reference Materials: Reference materials intended to help you get started in building your experience. This provides some game databases, videos, and other content which may help you if you are not familiar with ARPGs. | Code Documentation: Documentation for the Base Experience that you are developing. This provides an overview of the main scripts (note: you are not expected to understand or interact with these, but this documentation is here if you would like to do so). | . Contributing to the Documentation . If you would like to contribute to this documentation website, you are welcome to do so. Instructions for how to do this can be found here. ",
+    "url": "/#igb190-documentation",
     
-    "relUrl": "/#welcome-to-the-info-page-2"
-  },"89": {
-    "doc": "Home",
-    "title": "Features",
-    "content": ". | Clean layout | Responsive design | Easy to use | . Default label . Blue label . Stable . New release . Coming soon . Deprecated . ",
-    "url": "/#features",
-    
-    "relUrl": "/#features"
-  },"90": {
+    "relUrl": "/#igb190-documentation"
+  },"94": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
     "url": "/",
     
     "relUrl": "/"
-  },"91": {
+  },"95": {
     "doc": "Item Editor",
     "title": "Item Editor",
     "content": "The item editor allows you to create items and use custom logic to control the functionality of those items. ",
     "url": "/_pages/visual-coding/item-editor.html",
     
     "relUrl": "/_pages/visual-coding/item-editor.html"
-  },"92": {
+  },"96": {
     "doc": "Item Editor",
     "title": "Contents",
     "content": ". ",
     "url": "/_pages/visual-coding/item-editor.html",
     
     "relUrl": "/_pages/visual-coding/item-editor.html"
-  },"93": {
+  },"97": {
     "doc": "Importing a Mixamo Model",
     "title": "Importing a Mixamo Model",
     "content": " ",
     "url": "/_pages/guides/mixamo.html",
     
     "relUrl": "/_pages/guides/mixamo.html"
-  },"94": {
+  },"98": {
     "doc": "Importing a Mixamo Model",
     "title": "Contents",
     "content": ". | Importing a Mixamo Model . | Download the Model | Import the Mixamo Model | Importing Mixamo Animations | Features | . | . ",
     "url": "/_pages/guides/mixamo.html",
     
     "relUrl": "/_pages/guides/mixamo.html"
-  },"95": {
+  },"99": {
     "doc": "Importing a Mixamo Model",
     "title": "Download the Model",
     "content": ". | Go to Mixamo. | Log in, or create a new account if you do not already have one. | Select or upload your character model. | Customize the animation if needed by selecting from the animations available. | Click the Download button. | Choose the following options for Unity: . | Format: FBX for Unity. | Pose: T-Pose. | Animation: If you want to include the animation, make sure it’s selected. | Skin: With Skin. | . | Click the Download button in the popup. | . ",
     "url": "/_pages/guides/mixamo.html#download-the-model",
     
     "relUrl": "/_pages/guides/mixamo.html#download-the-model"
-  },"96": {
+  },"100": {
     "doc": "Importing a Mixamo Model",
     "title": "Import the Mixamo Model",
     "content": ". | Open your Unity project. | In the Project window, navigate to the folder you want to import the model into. | Drag the downloaded FBX file into the Unity folder, or right-click and select Import New Asset to locate and import the file manually. | Once imported, select the model in the Project window. | In the Inspector, go to the Model tab and ensure the Animation Type is set to Humanoid (for human-like characters) or Generic (for other types of models). | Under the Material section, if you’re using the legacy shader, check Import Materials and Use Legacy Materials to ensure proper texture mapping. This will help the model use the correct materials that were imported with the FBX. | Click Apply. | . ",
     "url": "/_pages/guides/mixamo.html#import-the-mixamo-model",
     
     "relUrl": "/_pages/guides/mixamo.html#import-the-mixamo-model"
-  },"97": {
+  },"101": {
     "doc": "Importing a Mixamo Model",
     "title": "Importing Mixamo Animations",
     "content": ". | Go to Mixamo.com. | Log in, or create a new account if you do not already have one. | . Mixamo models use different avatars for defining animations. This means that an animation shown on one character may not look correct if it is applied to a different character. If you encounter this problem, you should use a T-Pose for the avatar instead. dfgdfgdfg . ",
     "url": "/_pages/guides/mixamo.html#importing-mixamo-animations",
     
     "relUrl": "/_pages/guides/mixamo.html#importing-mixamo-animations"
-  },"98": {
+  },"102": {
     "doc": "Importing a Mixamo Model",
     "title": "Features",
     "content": ". | Clean layout | Responsive design | Easy to use | . Default label . Blue label . Stable . New release . Coming soon . Deprecated . ",
     "url": "/_pages/guides/mixamo.html#features",
     
     "relUrl": "/_pages/guides/mixamo.html#features"
-  },"99": {
+  },"103": {
     "doc": "Quest Documentation",
     "title": "The Quest Class",
     "content": "The quest class is used to create and control quests. The Quest class does not inherit from MonoBehaviour, so quests are not components which can be added to your scenes. Instead, you should use the methods described below to control quests (or use the visual scripting system). You are not required to write any code in this unit. It is recommended that you instead use the provided visual scripting system in this unit. If you want to implement logic that cannot easily be handled by that system though, this documentation should help you better understand the code and classes in the project. ",
     "url": "/_pages/documentation/quest.html#the-quest-class",
     
     "relUrl": "/_pages/documentation/quest.html#the-quest-class"
-  },"100": {
+  },"104": {
     "doc": "Quest Documentation",
     "title": "Contents",
     "content": ". | Creating a Quest | Activating a Quest | Deactivating a Quest | Updating Quest Progress | Checking Quest States | Completing a Quest | . ",
     "url": "/_pages/documentation/quest.html",
     
     "relUrl": "/_pages/documentation/quest.html"
-  },"101": {
+  },"105": {
     "doc": "Quest Documentation",
     "title": "Creating a Quest",
     "content": "// Create the quest with a basic label. Quest quest = new Quest(\"Skill Training\"); // Add a requirement to the quest. quest.AddCompletionRequirement(\"Use the Cleave Ability\"); // Alternatively, if you want it to have multiple progress increments, specify that number here. quest.AddCompletionRequirement(\"Use the Cleave Ability\", 5); // Specify the reward for the quest. This is just a label, you must code the specific reward logic // when the quest is completed. quest.SetReward(\"Legendary Item\"); . ",
     "url": "/_pages/documentation/quest.html#creating-a-quest",
     
     "relUrl": "/_pages/documentation/quest.html#creating-a-quest"
-  },"102": {
+  },"106": {
     "doc": "Quest Documentation",
     "title": "Activating a Quest",
     "content": "Even if you create a quest object, it is not ‘active’ until it is has been added to the quest system. This means that you can create all of the quests at the start of the level, and then only give them to the player when appropriate conditions are met. To add a quest to the quest system, use the following code: . GameManager.quests.AddQuest(quest); . ",
     "url": "/_pages/documentation/quest.html#activating-a-quest",
     
     "relUrl": "/_pages/documentation/quest.html#activating-a-quest"
-  },"103": {
+  },"107": {
     "doc": "Quest Documentation",
     "title": "Deactivating a Quest",
     "content": "If you want to remove a quest that has already been assigned to the player, you can use a similar command: . GameManager.quests.RemoveQuest(quest); . ",
     "url": "/_pages/documentation/quest.html#deactivating-a-quest",
     
     "relUrl": "/_pages/documentation/quest.html#deactivating-a-quest"
-  },"104": {
+  },"108": {
     "doc": "Quest Documentation",
     "title": "Updating Quest Progress",
     "content": "// Increments the quest requirement by a single increment. This can only be used // if the quest contains a single increment (otherwise it doesn't know which to // increment). quest.IncrementProgress(); // Increments the quest requirement by the given number of progress increments. quest.IncrementProgress(5); // Sets the quest progress to a specific value. This is helpful when the requirement // isn't going up and down in a steady way. E.g., if the quest completes when the player // gets 500 gold, this should dynamically update to a specific value whenever the player // gains or loses gold. quest.SetProgress((int)GameManager.player.currentGold); // Decrements the quest requirement by a single value. quest.DecrementProgress(); // If the quest has multiple completion requirements, you need to specify the label for // the requirement when incrementing it. quest.IncrementProgress(\"SpecificRequirement\", 2); . ",
     "url": "/_pages/documentation/quest.html#updating-quest-progress",
     
     "relUrl": "/_pages/documentation/quest.html#updating-quest-progress"
-  },"105": {
+  },"109": {
     "doc": "Quest Documentation",
     "title": "Checking Quest States",
     "content": "You can request information about the current quests with the following methods: . // Check to see if a quest is currently active. bool questIsActive = GameManager.quests.QuestIsActive(quest); // Alternatively, you can use the quest name instead. bool questIsActive = GameManager.quests.QuestIsActive(\"QuestName\"); // Check to see if a quest has been completed. bool questIsCompleted = GameManager.quests.QuestIsCompleted(quest); // Alternatively, use the quest name instead. bool questIsCompleted = GameManager.quests.QuestIsCompleted(\"QuestName\"); . ",
     "url": "/_pages/documentation/quest.html#checking-quest-states",
     
     "relUrl": "/_pages/documentation/quest.html#checking-quest-states"
-  },"106": {
+  },"110": {
     "doc": "Quest Documentation",
     "title": "Completing a Quest",
     "content": "A quest will automatically be completed when all of the requirements have been met. If you are wanting to perform actions when the quest completes (e.g., providing the quest reward), you should use the provided events to execute the quest completion logic. ",
     "url": "/_pages/documentation/quest.html#completing-a-quest",
     
     "relUrl": "/_pages/documentation/quest.html#completing-a-quest"
-  },"107": {
+  },"111": {
     "doc": "Quest Documentation",
     "title": "Quest Documentation",
     "content": " ",
     "url": "/_pages/documentation/quest.html",
     
     "relUrl": "/_pages/documentation/quest.html"
-  },"108": {
+  },"112": {
     "doc": "Reference Materials",
     "title": "Game Development Resources",
     "content": "This page contains a collection of resources that will help you develop your games. | Free ARPGs | Item Databases | Ability Databases | Gameplay Videos | . ",
     "url": "/_pages/reference-materials/reference-materials.html#game-development-resources",
     
     "relUrl": "/_pages/reference-materials/reference-materials.html#game-development-resources"
-  },"109": {
+  },"113": {
     "doc": "Reference Materials",
     "title": "Free ARPGs",
     "content": ". | Path of Exile: A highly popular and complex ARPG known for its deep skill tree and complex loot system. It’s free-to-play and often used as a reference for modern ARPG design. | Torchlight Infinite: Torchlight has a more casual, fun style than other ARPGs but still includes a lot of key elements like loot and character progression. | Lost Ark: A newer free-to-play ARPG with both a rich narrative and combat similar to the Diablo series. Its diverse character classes and dungeons can help students explore progression systems, combat design, and multiplayer interactions. | Diablo III (Starter Edition) – While Diablo III is typically a paid game, Blizzard offers a free Starter Edition that lets players experience the game up to level 13. It’s a great introduction to ARPGs, featuring a mix of combat, loot, and abilities. | . ",
     "url": "/_pages/reference-materials/reference-materials.html#free-arpgs",
     
     "relUrl": "/_pages/reference-materials/reference-materials.html#free-arpgs"
-  },"110": {
+  },"114": {
     "doc": "Reference Materials",
     "title": "Item Databases",
     "content": "If you are looking for inspiration for item effects, you should consider looking through the unique/legendary items used in popular games within the genre. | Diablo 3 Item Database | Diablo 4 Item Database | Lost Ark Item Database | Last Epoch Item Database | Path of Exile Item Database | Path of Exile 2 Item Database | . ",
     "url": "/_pages/reference-materials/reference-materials.html#item-databases",
     
     "relUrl": "/_pages/reference-materials/reference-materials.html#item-databases"
-  },"111": {
+  },"115": {
     "doc": "Reference Materials",
     "title": "Ability Databases",
     "content": " ",
     "url": "/_pages/reference-materials/reference-materials.html#ability-databases",
     
     "relUrl": "/_pages/reference-materials/reference-materials.html#ability-databases"
-  },"112": {
+  },"116": {
     "doc": "Reference Materials",
     "title": "Gameplay Videos",
     "content": " ",
     "url": "/_pages/reference-materials/reference-materials.html#gameplay-videos",
     
     "relUrl": "/_pages/reference-materials/reference-materials.html#gameplay-videos"
-  },"113": {
+  },"117": {
     "doc": "Reference Materials",
     "title": "Reference Materials",
     "content": " ",
     "url": "/_pages/reference-materials/reference-materials.html",
     
     "relUrl": "/_pages/reference-materials/reference-materials.html"
-  },"114": {
+  },"118": {
     "doc": "Resources",
     "title": "Game Development Resources",
     "content": "This page contains a collection of resources that will help you develop your games. | Game Design | Game Programming Resources | UI | Fonts | Music | Sound Effects | Textures | Animations | 3D Models | 3D Humanoid Characters | Terrain Tools | Useful Unity Tools | . ",
     "url": "/resources/#game-development-resources",
     
     "relUrl": "/resources/#game-development-resources"
-  },"115": {
+  },"119": {
     "doc": "Resources",
     "title": "Game Design",
     "content": "Game Design Lenses: A collection of 101 lenses or perspectives that help you analyze and improve your game design decisions. These lenses focus on aspects like gameplay balance, player experience, and system design. Great for refining your ideas and spotting potential issues. The MDA Framework: A well-known framework for understanding how different game design elements interact. It helps you think about the relationship between game mechanics, player behavior (dynamics), and the emotional responses you want to evoke (aesthetics). The Golden Rule of Game Design: This article breaks down the “Golden Rule” of game design: designing with the player’s experience in mind. It provides advice on how to ensure that your game is intuitive, engaging, and enjoyable by prioritizing player feedback and emotions. The Game Maker’s Toolkit YouTube Channel: A YouTube channel by Mark Brown, who explores specific game design elements in detail, like level design, systems, and player psychology. His videos break down examples from real games and provide valuable insights into how game mechanics and narrative are intertwined. The 5 Types of Fun: In this video, Marc LeBlanc discusses the five types of fun: Sensation, Fantasy, Narrative, Challenge, and Fellowship. Understanding these types helps you design games that cater to different player preferences and build deeper, more engaging experiences. The Designer’s Notebook: A collection of articles by seasoned game designers, each offering insights on different elements of game design, from narrative to mechanics to systems design. Each article tackles a specific aspect of creating games and offers actionable advice. Game Accessibility Guidelines: Every game designer should bookmark these guidelines. They go through the principles you should follow and give examples for each task. There’s even a checklist you can download. GDC Vault: The Game Developers Conference adds all the various talks and presentations from their events to their vault. These range from technical advice on how to develop specific ideas to wider trends and best practices. Design Doc This channel answers the tricky, specific questions you might have about game design, focusing on the mechanics themselves. How do you stop people from hoarding items? Why add critical hits? What’s the point of fast travel? . Brackeys: A huge channel of tutorials that also delves into the actual game design decisions behind that development. The only downside is that they shut down a few years ago, so some videos can be a little outdated. ",
     "url": "/resources/#game-design",
     
     "relUrl": "/resources/#game-design"
-  },"116": {
+  },"120": {
     "doc": "Resources",
     "title": "Game Programming Resources",
     "content": "Game Programming Patterns: Keeping your code clean and organised is a major challenge, so this free ebook teaches you the best practices. Programming Patterns on Unity: Unity has released a similar guide around coding patterns and explaining how to use them inside Unity. freeCodeCamp.org: If you want to learn to code, this is the channel to visit. They go deep into the practical and theory side and even have the full Harvard Computer Science University course as a 25-hour video. ",
     "url": "/resources/#game-programming-resources",
     
     "relUrl": "/resources/#game-programming-resources"
-  },"117": {
+  },"121": {
     "doc": "Resources",
     "title": "UI",
     "content": "Game UI Database: A collection of reference images clearly showing key UI elements for thousands of games. Game-icons.net: A collection of thousands of game icons (CC 3.0 Licence). ",
     "url": "/resources/#ui",
     
     "relUrl": "/resources/#ui"
-  },"118": {
+  },"122": {
     "doc": "Resources",
     "title": "Fonts",
     "content": "Google Fonts – Offers a wide variety of fonts that are free for personal and commercial use. It’s easy to integrate into both web and game projects. DaFont – A large collection of fonts, many of which are free for personal use (and some for commercial use). It’s popular for more creative and themed fonts. 1001 Free Fonts – Offers a variety of fonts, with some fonts available for commercial use. Be sure to check the licensing for each font. FontSpace – A large community-driven collection of free fonts, many of which are free for commercial use. Always check the font license. ",
     "url": "/resources/#fonts",
     
     "relUrl": "/resources/#fonts"
-  },"119": {
+  },"123": {
     "doc": "Resources",
     "title": "Music",
     "content": "Free Music Archive (FMA) – A great resource for free music under various licenses, including Creative Commons. It’s a good place to find royalty-free music for your game. Incompetech – Created by composer Kevin MacLeod, Incompetech offers a large library of royalty-free music that can be used for games, with proper attribution required. Bensound – Offers royalty-free music, with many tracks available for free with attribution. Great for background music in games. ",
     "url": "/resources/#music",
     
     "relUrl": "/resources/#music"
-  },"120": {
+  },"124": {
     "doc": "Resources",
     "title": "Sound Effects",
     "content": "GDC Free Sound and Music: Every year, the Game Developers Conference (GDC) offers a collection of free sound effects and music that can be used in your games. The collection includes tracks from the GDC Audio and Music track, often showcasing great work from professionals in the industry. You can access these resources for free after registering with GDC. Freesound A collaborative database of audio clips, many of which are free for use under a Creative Commons license. You can find a wide range of sound effects, from nature sounds to urban noises. SoundBible – Provides free sound effects that are either public domain or Creative Commons-licensed, perfect for game development. FreeSoundEffects – A collection of royalty-free sound effects, with many available for both personal and commercial use. BBC Sound Effects Archive – A massive collection of over 16,000 sound effects, available for free under a RemArc license for personal and educational use. ",
     "url": "/resources/#sound-effects",
     
     "relUrl": "/resources/#sound-effects"
-  },"121": {
+  },"125": {
     "doc": "Resources",
     "title": "Textures",
     "content": "AmbientCG – Offers high-quality textures under a Creative Commons CC0 license, meaning you can use them for any project, even commercial ones. They have a wide range of textures, including materials, wood, metals, and more. Texture Haven – A great resource for high-quality, free textures with a focus on photorealistic materials. All textures are available under the CC0 license. Textures.com – Provides a large library of free textures, with a focus on realistic materials. They offer free textures with a limitation on the number of downloads per day, and a paid option for more frequent downloads. CGBookcase – A collection of high-quality textures, all free for personal and commercial use, under a CC0 license. It includes a variety of materials such as fabrics, metals, and bricks. Share Textures – Offers a variety of free textures, including PBR (physically-based rendering) textures, which are great for game engines like Unity and Unreal. 3DTextures.me A library of PBR and high-quality textures that are free to use under a Creative Commons license. They have a wide range of textures for environments, buildings, and materials. FreePBR.com – Focuses on providing free PBR (Physically Based Rendering) textures, useful for realistic game environments. Textures are free to use for both personal and commercial projects. GameTextures – Offers both free and paid textures, with a range of materials like metal, wood, and rock. The free options include a good selection, and you can use them in commercial projects with proper attribution. ",
     "url": "/resources/#textures",
     
     "relUrl": "/resources/#textures"
-  },"122": {
+  },"126": {
     "doc": "Resources",
     "title": "Animations",
     "content": "Mixamo A fantastic resource for free, high-quality 3D character animations. It allows you to upload your own models or use their library of free characters and animations. All animations are free for commercial and non-commercial use. OpenGameArt – Offers a variety of 2D and 3D assets, including character animations, free for use in your games. The animations available are licensed under Creative Commons or public domain. Kenney – Known for its high-quality, free game assets, Kenney provides 2D and 3D character animations. All assets are free to use in commercial and non-commercial projects. Unity Asset Store (Free Section) – The Unity Asset Store has a collection of free animation packs for both 2D and 3D models. These can be used in Unity projects with clear licensing terms, which can include commercial use. ",
     "url": "/resources/#animations",
     
     "relUrl": "/resources/#animations"
-  },"123": {
+  },"127": {
     "doc": "Resources",
     "title": "3D Models",
     "content": "TurboSquid: While TurboSquid is primarily a paid service, they offer a selection of free models, including characters, environments, and vehicles. CGTrader: A marketplace offering free 3D models, with a range of categories from low-poly characters to more detailed models suitable for game use. Sketchfab: A platform where creators can share 3D models, including both free and paid assets. Sketchfab’s library contains numerous free models, ranging from characters to environment assets. OpenGameArt: Offers a large collection of free 3D models, textures, and assets for game development, with many models suitable for prototyping and indie projects. Kenney: A well-known creator of free game assets, Kenney provides 3D models for characters, environments, and other game elements. Clara.io: A cloud-based 3D modeling tool with a library of free 3D models. You can find a variety of free models for use in games and other projects. Free3D: A repository offering free 3D models in various formats, including .obj, .fbx, and .3ds, for use in game development. ",
     "url": "/resources/#3d-models",
     
     "relUrl": "/resources/#3d-models"
-  },"124": {
+  },"128": {
     "doc": "Resources",
     "title": "3D Humanoid Characters",
     "content": "Mixamo: Mixamo offers a vast collection of free 3D character animations that are ready to be applied to your models. You can upload your own 3D models or choose from a variety of characters provided by Mixamo. The animations cover a wide range of actions, from running and jumping to combat and dancing. All animations are free for both personal and commercial use. OpenGameArt: OpenGameArt provides a range of free 3D animated character models. The site includes fully rigged characters with animation sets for various actions, such as walking, running, and attacking. Models and animations are generally licensed under Creative Commons or public domain, allowing for free use in both personal and commercial projects. Kenney: Kenney’s free asset packs include animated 3D character models, along with animations for movements such as walking and jumping. The models are fully rigged and ready to be used in your projects. All assets from Kenney are free for both commercial and non-commercial use, with no attribution required. ",
     "url": "/resources/#3d-humanoid-characters",
     
     "relUrl": "/resources/#3d-humanoid-characters"
-  },"125": {
+  },"129": {
     "doc": "Resources",
     "title": "Terrain Tools",
     "content": "World Machine (Free Version): World Machine is a powerful terrain generation tool that allows you to create realistic, complex terrains using an intuitive node-based system. The free version includes basic features, enabling you to generate heightmaps, apply erosion effects, and export terrains. Gaea (Free Version): Gaea is another terrain generation tool that offers a free version with powerful terrain-building features. It allows for the creation of heightmaps, erosion effects, and other features like textures and materials for creating realistic terrains. ",
     "url": "/resources/#terrain-tools",
     
     "relUrl": "/resources/#terrain-tools"
-  },"126": {
+  },"130": {
     "doc": "Resources",
     "title": "Useful Unity Tools",
     "content": "DOTween: A fast and efficient animation system that works with Unity’s tweening features to create smooth animations for any kind of object or property. PrimeTween: A high-performance animation and sequencing tool designed to provide maximum flexibility and speed for complex animation systems. PlayerPref Editor: A user-friendly editor tool for managing Unity PlayerPrefs, allowing easy access and modification of saved data. Sticky Notes: A tool that lets developers place sticky notes in the Unity Editor for better organization and reminders within the project. Editor Attributes: A package that provides useful attributes to improve Unity Editor interfaces, such as custom labels, color-coding, and tooltips. Serialized Dictionary: A Unity plugin for using dictionaries in the Inspector, offering a more flexible data structure for game developers. Fast Script Reload: A tool that speeds up script reloading during development, reducing iteration times and enhancing productivity for Unity developers. ",
     "url": "/resources/#useful-unity-tools",
     
     "relUrl": "/resources/#useful-unity-tools"
-  },"127": {
+  },"131": {
     "doc": "Resources",
     "title": "Resources",
     "content": " ",
     "url": "/resources/",
     
     "relUrl": "/resources/"
-  },"128": {
+  },"132": {
     "doc": "Visual Coding",
     "title": "Visual Coding",
     "content": "In this guide, you will learn how to set dress an environment to make the space feel more natural and unique. This is especially beneficial when the space has been created using a small set of generic tiles. ",
     "url": "/_pages/visual-coding/visual-coding.html",
     
     "relUrl": "/_pages/visual-coding/visual-coding.html"
-  },"129": {
+  },"133": {
     "doc": "Visual Coding",
     "title": "Contents",
-    "content": ". | Visual Coding Structure | Creating Scripts | Variable Types | Deleting and Renaming Scripts | Events . | When a unit begins casting this ability | . | . ",
+    "content": ". | Visual Coding Structure | Events . | This is a test. | Ability Events | Time Events | Unit Events | . | Variable Types | Deleting and Renaming Scripts | Events . | When a unit begins casting this ability | . | . ",
     "url": "/_pages/visual-coding/visual-coding.html",
     
     "relUrl": "/_pages/visual-coding/visual-coding.html"
-  },"130": {
+  },"134": {
     "doc": "Visual Coding",
     "title": "Visual Coding Structure",
     "content": "The visual coding system can be used to define custom logic for the experience without needing to write C# code. Visual Code Scripts follow an Event, Condition, Action structure. | The Event controls when the logic will activate. | The Conditions can be used to create aditional activation requirements. | The Actions control what the script will do. | . Custom visual code can be added to specific items using the Item Editor, to abilities with the Ability Editor, or to the game more generally with the General Script Editor. Below is an example showing the visual code for the War Cry ability. When the ability containing this script is cast, it spawns a visual effect on the caster, then their damage dealt is increased by 25% and damage taken is decreased by 25% for 10 seconds. ",
     "url": "/_pages/visual-coding/visual-coding.html#visual-coding-structure",
     
     "relUrl": "/_pages/visual-coding/visual-coding.html#visual-coding-structure"
-  },"131": {
+  },"135": {
     "doc": "Visual Coding",
-    "title": "Creating Scripts",
-    "content": "| Events | . | When a unit begins casting this ability | . | When a unit finishes casting this ability | . | Actions |   | . | Wait | Wait for [NUMBER] seconds. | . | If Statement | Do actions if [BOOL] | . | While Statement | Do actions while [BOOL] | . ",
-    "url": "/_pages/visual-coding/visual-coding.html#creating-scripts",
+    "title": "Events",
+    "content": "This is a test. Ability Events . When a unit begins casting this abilityTODO When a unit finishes casting this abilityTODO Time Events . On script loadedTODO On script unloadedTODO Do every frameTODO Do after X secondsTODO Do every X SecondsTODO Unit Events . Unit is killedTODO Unit is damagedTODO Unit is healedTODO Unit gains resourceTODO Unit loses resourceTODO When a unit starts casting specific abilityTODO When a unit finishes casting specific abilityTODO | Time |   | . | On Script Loaded | N/A | . | On script unloaded test |   | . | Actions |   | . | Wait | Wait for [NUMBER] seconds. | . | If Statement | Do actions if [BOOL] | . | While Statement | Do actions while [BOOL] | . ",
+    "url": "/_pages/visual-coding/visual-coding.html#events",
     
-    "relUrl": "/_pages/visual-coding/visual-coding.html#creating-scripts"
-  },"132": {
+    "relUrl": "/_pages/visual-coding/visual-coding.html#events"
+  },"136": {
     "doc": "Visual Coding",
     "title": "Variable Types",
     "content": ". | TEXT: Plain text. | NUMBER: A decimal number. | ABILITY: An ability object. | ITEM: An item object. | PROJECTILE: | AUDIO CLIP: A sound file. | UNIT: A single unit. | UNIT GROUP: A group of units (could be empty). | EFFECT: A particle effect which can be spawned. | POSITION: A Vector representing a position. | OPTION: Select from a preset list (e.g., the exact stat that should be modified). | . ",
     "url": "/_pages/visual-coding/visual-coding.html#variable-types",
     
     "relUrl": "/_pages/visual-coding/visual-coding.html#variable-types"
-  },"133": {
+  },"137": {
     "doc": "Visual Coding",
     "title": "Deleting and Renaming Scripts",
     "content": " ",
     "url": "/_pages/visual-coding/visual-coding.html#deleting-and-renaming-scripts",
     
     "relUrl": "/_pages/visual-coding/visual-coding.html#deleting-and-renaming-scripts"
-  },"134": {
+  },"138": {
     "doc": "Visual Coding",
     "title": "Events",
     "content": "When a unit begins casting this ability . | Type | Variable | Description | . | float | healthPickedUp | The amount of health that was picked up. | . The . ",
-    "url": "/_pages/visual-coding/visual-coding.html#events",
+    "url": "/_pages/visual-coding/visual-coding.html#events-1",
     
-    "relUrl": "/_pages/visual-coding/visual-coding.html#events"
+    "relUrl": "/_pages/visual-coding/visual-coding.html#events-1"
   }
 }

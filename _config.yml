@@ -1,4 +1,4 @@
-title: IGB190 Wiki
+title: IGB190 Docs
 description: "Some helpful documentation for the IGB190 ARPG Prototype."
 theme: "just-the-docs"
 
@@ -34,6 +34,9 @@ callouts:
     color: purple
   warning:
     title: Warning
+    color: red
+  vs-event:
+    title: 
     color: red
 
 include:
