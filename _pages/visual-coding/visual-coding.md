@@ -342,7 +342,7 @@ Below is a summary of all the events in the visual scripting system, with a shor
 ### Region Conditions
 
 {: .new-title }
-> Condition
+> Condition > Region
 > 
 > <details markdown="1" class="note">
 > <summary style="font-weight: 500;">Region exists</summary>
@@ -352,7 +352,7 @@ Below is a summary of all the events in the visual scripting system, with a shor
 > </details>
 
 {: .new-title }
-> Condition
+> Condition > Region
 > 
 > <details markdown="1" class="note">
 > <summary style="font-weight: 500;">Unit is in region</summary>
@@ -360,6 +360,19 @@ Below is a summary of all the events in the visual scripting system, with a shor
 >
 > True if the specified unit is currently in a region with the specified name. The name must match the region **exactly**.
 > </details>
+
+### Input Conditions
+
+{: .new-title }
+> Condition > Input
+> 
+> <details markdown="1" class="note">
+> <summary style="font-weight: 500;">Key is held</summary>
+> ![Script Editor Example](../assets/condition-3.jpg)
+>
+> True if the specified key is currently being held. For simple keys, just enter the key (e.g., enter 'f' if you want to check for the f key being pressed). If you want to check more "complex" keybinds, refer to the lists in the discussion thread [**here**](https://discussions.unity.com/t/c-list-of-string-name-for-input-getkey-string-name/112629/3).
+> </details>
+
 
 |Time |
 | On Script Loaded | N/A |
