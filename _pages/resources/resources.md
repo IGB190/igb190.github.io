@@ -2,7 +2,7 @@
 title: Resources
 layout: default
 permalink: /resources/
-nav_order: 3
+nav_order: 99
 ---
 
 # Game Development Resources

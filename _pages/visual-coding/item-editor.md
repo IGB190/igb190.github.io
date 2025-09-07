@@ -6,7 +6,7 @@ parent: Visual Coding
 
 # Item Editor
 {: .no_toc }
-The item editor allows you to create items and use custom logic to control the functionality of those items.
+The item editor window is used to create items visually, without the need for code. It allows you to choose basic properties for the item, such as its name, icon, item slot and tooltip. This window also allows you to choose specific stats that the item can have, as well the the stat ranges for each stat.
 
 ---
 <h2 class="text-delta">Contents</h2>
