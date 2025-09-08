@@ -25,7 +25,7 @@ If the visual scripting node allows it, you will be able to specify a *specific*
 
 ### Item Nodes
 
-{: .new-title }
+{: .note-title }
 > Item
 > 
 > <details markdown="1" class="note">

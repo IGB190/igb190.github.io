@@ -22,7 +22,7 @@ If the visual scripting node allows it, you will be able to specify a *specific*
 
 ### Unit Nodes (Distance)
 
-{: .new-title }
+{: .note-title }
 > Unit > Distance
 > 
 > <details markdown="1" class="note">
@@ -32,7 +32,7 @@ If the visual scripting node allows it, you will be able to specify a *specific*
 > Returns the closest unit to the specified point (within the maximum distance).
 > </details>
 
-{: .new-title }
+{: .note-title }
 > Unit > Distance
 > 
 > <details markdown="1" class="note">
@@ -42,7 +42,7 @@ If the visual scripting node allows it, you will be able to specify a *specific*
 > Returns the furthest unit to the specified point (within the maximum distance).
 > </details>
 
-{: .new-title }
+{: .note-title }
 > Unit > Distance
 > 
 > <details markdown="1" class="note">
@@ -52,7 +52,7 @@ If the visual scripting node allows it, you will be able to specify a *specific*
 > Returns the closest unit to the specified unit (within the maximum distance).
 > </details>
 
-{: .new-title }
+{: .note-title }
 > Unit > Distance
 > 
 > <details markdown="1" class="note">
@@ -64,7 +64,7 @@ If the visual scripting node allows it, you will be able to specify a *specific*
 
 ### Unit Nodes (Random)
 
-{: .new-title }
+{: .note-title }
 > Unit > Random
 > 
 > <details markdown="1" class="note">
@@ -74,7 +74,7 @@ If the visual scripting node allows it, you will be able to specify a *specific*
 > Returns a random unit within a given distance of a given unit.
 > </details>
 
-{: .new-title }
+{: .note-title }
 > Unit > Random
 > 
 > <details markdown="1" class="note">
@@ -86,7 +86,7 @@ If the visual scripting node allows it, you will be able to specify a *specific*
 
 ### Unit Nodes (Variables)
 
-{: .new-title }
+{: .note-title }
 > Unit > Variable
 > 
 > <details markdown="1" class="note">
@@ -96,7 +96,7 @@ If the visual scripting node allows it, you will be able to specify a *specific*
 > Returns the unit stored in the variable with the given name. This variable is shared between all scripts in the same "block" (e.g., ability/item).
 > </details>
 
-{: .new-title }
+{: .note-title }
 > Unit > Variable
 > 
 > <details markdown="1" class="note">
@@ -108,7 +108,7 @@ If the visual scripting node allows it, you will be able to specify a *specific*
 
 ### Unit Nodes (Other)
 
-{: .new-title }
+{: .note-title }
 > Unit > Other
 > 
 > <details markdown="1" class="note">

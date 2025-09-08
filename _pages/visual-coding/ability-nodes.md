@@ -22,7 +22,7 @@ If the visual scripting node allows it, you will be able to specify a *specific*
 
 ### Ability Nodes
 
-{: .new-title }
+{: .note-title }
 > Ability
 > 
 > <details markdown="1" class="note">
@@ -32,7 +32,7 @@ If the visual scripting node allows it, you will be able to specify a *specific*
 > Returns a random ability on the specified unit.
 > </details>
 
-{: .new-title }
+{: .note-title }
 > Ability
 > 
 > <details markdown="1" class="note">

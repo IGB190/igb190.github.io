@@ -22,7 +22,7 @@ If the visual scripting node allows it, you will be able to specify a *specific*
 
 ### String Nodes
 
-{: .new-title }
+{: .note-title }
 > String
 > 
 > <details markdown="1" class="note">
@@ -32,7 +32,7 @@ If the visual scripting node allows it, you will be able to specify a *specific*
 > Returns the name of the given unit. Note that its name is specified by the `unitName`, and is not the name of the prefab which you see when selecting the unit from the dropdown.
 > </details>
 
-{: .new-title }
+{: .note-title }
 > String
 > 
 > <details markdown="1" class="note">
@@ -42,7 +42,7 @@ If the visual scripting node allows it, you will be able to specify a *specific*
 > Returns the name of the given ability.
 > </details>
 
-{: .new-title }
+{: .note-title }
 > String
 > 
 > <details markdown="1" class="note">
@@ -52,7 +52,7 @@ If the visual scripting node allows it, you will be able to specify a *specific*
 > Returns the tag of the given ability.
 > </details>
 
-{: .new-title }
+{: .note-title }
 > String
 > 
 > <details markdown="1" class="note">
@@ -62,7 +62,7 @@ If the visual scripting node allows it, you will be able to specify a *specific*
 > Returns the tag of the given item.
 > </details>
 
-{: .new-title }
+{: .note-title }
 > String
 > 
 > <details markdown="1" class="note">
@@ -74,7 +74,7 @@ If the visual scripting node allows it, you will be able to specify a *specific*
 
 ### Unit Nodes (Variables)
 
-{: .new-title }
+{: .note-title }
 > String > Variable
 > 
 > <details markdown="1" class="note">
@@ -84,7 +84,7 @@ If the visual scripting node allows it, you will be able to specify a *specific*
 > Returns the string stored in the variable with the given name. This variable is shared between all scripts in the same "block" (e.g., ability/item).
 > </details>
 
-{: .new-title }
+{: .note-title }
 > String > Variable
 > 
 > <details markdown="1" class="note">
