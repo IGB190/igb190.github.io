@@ -1023,7 +1023,7 @@
   },"146": {
     "doc": "Home",
     "title": "IGB190 Documentation",
-    "content": "This website is intended to provide some helpful guides and resources for the unit IGB190: Game Mechanics Implementation. In this unit, you will be using the provided tools and packages to build a 10-minute action role-playing game (ARPG). The experience will have a custom player-character, a variety of custom abilities, a selection of item sets with custom abilities, enemies, tilemaps, quests and more. To help you do this, you will be contributing to a partially-completed project which has many of the core systems already set up. This website aims to help you better understand these systems, and how you can use them to build your intended experience. Areas you may wish to explore include: . | Guides: Contains a variety of helpful guides aimed at teaching the basics of various topics. | Visual Coding: An overview of the visual coding system available in the experience for creating abilities, items, quests, and general game logic (such as tutorials and bespoke events). | Resources: Contains helpful resources that will help you develop your project. | Reference Materials: Reference materials intended to help you get started in building your experience. This provides some game databases, videos, and other content which may help you if you are not familiar with ARPGs. | Code Documentation: Documentation for the Base Experience that you are developing. This provides an overview of the main scripts (note: you are not expected to understand or interact with these, but this documentation is here if you would like to do so). | . Contributing to the Documentation . If you would like to contribute to this documentation website, you are welcome to do so. Instructions for how to do this can be found here. ",
+    "content": "This website is intended to provide some helpful guides and resources for the unit IGB190: Game Mechanics Implementation. In this unit, you will be using the provided tools and packages to build a 10-minute action role-playing game (ARPG). The experience will have a custom player-character, a variety of custom abilities, a selection of item sets with custom abilities, enemies, tilemaps, quests and more. To help you do this, you will be contributing to a partially-completed project which has many of the core systems already set up. This website aims to help you better understand these systems, and how you can use them to build your intended experience. Areas you may wish to explore include: . | Systems Summary: Contains an overview of the core game systems and their core functionality. If you are just starting out, reading a summary of each system would be a good place to start. | IGB190 Guides: Contains a variety of helpful guides for the IGB190 project, aimed at helping you get started with the core activities: making your character with custom abilities, making custom items, and creating an interesting build. | Visual Coding: An overview of the visual coding system available in the experience for creating abilities, items, quests, and general game logic (such as tutorials and bespoke events). | Resources: Contains helpful resources that will help you develop your project. | Reference Materials: Reference materials intended to help you get started in building your experience. This provides some game databases, videos, and other content which may help you if you are not familiar with ARPGs. | Code Documentation: Documentation for the Base Experience that you are developing. This provides an overview of the main scripts (note: you are not expected to understand or interact with these, but this documentation is here if you would like to do so). | . Contributing to the Documentation . If you would like to contribute to this documentation website, you are welcome to do so. Instructions for how to do this can be found here. ",
     "url": "/#igb190-documentation",
     
     "relUrl": "/#igb190-documentation"
@@ -1422,7 +1422,7 @@
   },"203": {
     "doc": "Reference Materials",
     "title": "Game Development Resources",
-    "content": "This page contains a collection of resources that will help you develop your games. | Free ARPGs | Item Databases | Ability Databases | . ",
+    "content": "This page contains a collection of resources that will help you develop your games. | Free ARPGs | Item Databases | Ability Databases | Gameplay Videos | . ",
     "url": "/_pages/reference-materials/reference-materials.html#game-development-resources",
     
     "relUrl": "/_pages/reference-materials/reference-materials.html#game-development-resources"
@@ -1449,243 +1449,250 @@
     "relUrl": "/_pages/reference-materials/reference-materials.html#ability-databases"
   },"207": {
     "doc": "Reference Materials",
+    "title": "Gameplay Videos",
+    "content": "Here are some recordings of gameplay with the three existing characters: . ",
+    "url": "/_pages/reference-materials/reference-materials.html#gameplay-videos",
+    
+    "relUrl": "/_pages/reference-materials/reference-materials.html#gameplay-videos"
+  },"208": {
+    "doc": "Reference Materials",
     "title": "Reference Materials",
     "content": " ",
     "url": "/_pages/reference-materials/reference-materials.html",
     
     "relUrl": "/_pages/reference-materials/reference-materials.html"
-  },"208": {
+  },"209": {
     "doc": "Resources",
     "title": "Game Development Resources",
     "content": "This page contains a collection of resources that will help you develop your games. | Game Design | Game Programming Resources | UI | Fonts | Music | Sound Effects | Textures | Animations | 3D Models | 3D Humanoid Characters | Terrain Tools | Useful Unity Tools | . ",
     "url": "/resources/#game-development-resources",
     
     "relUrl": "/resources/#game-development-resources"
-  },"209": {
+  },"210": {
     "doc": "Resources",
     "title": "Game Design",
     "content": "Game Design Lenses: A collection of 101 lenses or perspectives that help you analyze and improve your game design decisions. These lenses focus on aspects like gameplay balance, player experience, and system design. Great for refining your ideas and spotting potential issues. The MDA Framework: A well-known framework for understanding how different game design elements interact. It helps you think about the relationship between game mechanics, player behavior (dynamics), and the emotional responses you want to evoke (aesthetics). The Golden Rule of Game Design: This article breaks down the “Golden Rule” of game design: designing with the player’s experience in mind. It provides advice on how to ensure that your game is intuitive, engaging, and enjoyable by prioritizing player feedback and emotions. The Game Maker’s Toolkit YouTube Channel: A YouTube channel by Mark Brown, who explores specific game design elements in detail, like level design, systems, and player psychology. His videos break down examples from real games and provide valuable insights into how game mechanics and narrative are intertwined. The 5 Types of Fun: In this video, Marc LeBlanc discusses the five types of fun: Sensation, Fantasy, Narrative, Challenge, and Fellowship. Understanding these types helps you design games that cater to different player preferences and build deeper, more engaging experiences. The Designer’s Notebook: A collection of articles by seasoned game designers, each offering insights on different elements of game design, from narrative to mechanics to systems design. Each article tackles a specific aspect of creating games and offers actionable advice. Game Accessibility Guidelines: Every game designer should bookmark these guidelines. They go through the principles you should follow and give examples for each task. There’s even a checklist you can download. GDC Vault: The Game Developers Conference adds all the various talks and presentations from their events to their vault. These range from technical advice on how to develop specific ideas to wider trends and best practices. Design Doc This channel answers the tricky, specific questions you might have about game design, focusing on the mechanics themselves. How do you stop people from hoarding items? Why add critical hits? What’s the point of fast travel? . Brackeys: A huge channel of tutorials that also delves into the actual game design decisions behind that development. The only downside is that they shut down a few years ago, so some videos can be a little outdated. ",
     "url": "/resources/#game-design",
     
     "relUrl": "/resources/#game-design"
-  },"210": {
+  },"211": {
     "doc": "Resources",
     "title": "Game Programming Resources",
     "content": "Game Programming Patterns: Keeping your code clean and organised is a major challenge, so this free ebook teaches you the best practices. Programming Patterns on Unity: Unity has released a similar guide around coding patterns and explaining how to use them inside Unity. freeCodeCamp.org: If you want to learn to code, this is the channel to visit. They go deep into the practical and theory side and even have the full Harvard Computer Science University course as a 25-hour video. ",
     "url": "/resources/#game-programming-resources",
     
     "relUrl": "/resources/#game-programming-resources"
-  },"211": {
+  },"212": {
     "doc": "Resources",
     "title": "UI",
     "content": "Game UI Database: A collection of reference images clearly showing key UI elements for thousands of games. Game-icons.net: A collection of thousands of game icons (CC 3.0 Licence). ",
     "url": "/resources/#ui",
     
     "relUrl": "/resources/#ui"
-  },"212": {
+  },"213": {
     "doc": "Resources",
     "title": "Fonts",
     "content": "Google Fonts – Offers a wide variety of fonts that are free for personal and commercial use. It’s easy to integrate into both web and game projects. DaFont – A large collection of fonts, many of which are free for personal use (and some for commercial use). It’s popular for more creative and themed fonts. 1001 Free Fonts – Offers a variety of fonts, with some fonts available for commercial use. Be sure to check the licensing for each font. FontSpace – A large community-driven collection of free fonts, many of which are free for commercial use. Always check the font license. ",
     "url": "/resources/#fonts",
     
     "relUrl": "/resources/#fonts"
-  },"213": {
+  },"214": {
     "doc": "Resources",
     "title": "Music",
     "content": "Free Music Archive (FMA) – A great resource for free music under various licenses, including Creative Commons. It’s a good place to find royalty-free music for your game. Incompetech – Created by composer Kevin MacLeod, Incompetech offers a large library of royalty-free music that can be used for games, with proper attribution required. Bensound – Offers royalty-free music, with many tracks available for free with attribution. Great for background music in games. ",
     "url": "/resources/#music",
     
     "relUrl": "/resources/#music"
-  },"214": {
+  },"215": {
     "doc": "Resources",
     "title": "Sound Effects",
     "content": "GDC Free Sound and Music: Every year, the Game Developers Conference (GDC) offers a collection of free sound effects and music that can be used in your games. The collection includes tracks from the GDC Audio and Music track, often showcasing great work from professionals in the industry. You can access these resources for free after registering with GDC. Freesound A collaborative database of audio clips, many of which are free for use under a Creative Commons license. You can find a wide range of sound effects, from nature sounds to urban noises. SoundBible – Provides free sound effects that are either public domain or Creative Commons-licensed, perfect for game development. FreeSoundEffects – A collection of royalty-free sound effects, with many available for both personal and commercial use. BBC Sound Effects Archive – A massive collection of over 16,000 sound effects, available for free under a RemArc license for personal and educational use. ",
     "url": "/resources/#sound-effects",
     
     "relUrl": "/resources/#sound-effects"
-  },"215": {
+  },"216": {
     "doc": "Resources",
     "title": "Textures",
     "content": "AmbientCG – Offers high-quality textures under a Creative Commons CC0 license, meaning you can use them for any project, even commercial ones. They have a wide range of textures, including materials, wood, metals, and more. Texture Haven – A great resource for high-quality, free textures with a focus on photorealistic materials. All textures are available under the CC0 license. Textures.com – Provides a large library of free textures, with a focus on realistic materials. They offer free textures with a limitation on the number of downloads per day, and a paid option for more frequent downloads. CGBookcase – A collection of high-quality textures, all free for personal and commercial use, under a CC0 license. It includes a variety of materials such as fabrics, metals, and bricks. Share Textures – Offers a variety of free textures, including PBR (physically-based rendering) textures, which are great for game engines like Unity and Unreal. 3DTextures.me A library of PBR and high-quality textures that are free to use under a Creative Commons license. They have a wide range of textures for environments, buildings, and materials. FreePBR.com – Focuses on providing free PBR (Physically Based Rendering) textures, useful for realistic game environments. Textures are free to use for both personal and commercial projects. GameTextures – Offers both free and paid textures, with a range of materials like metal, wood, and rock. The free options include a good selection, and you can use them in commercial projects with proper attribution. ",
     "url": "/resources/#textures",
     
     "relUrl": "/resources/#textures"
-  },"216": {
+  },"217": {
     "doc": "Resources",
     "title": "Animations",
     "content": "Mixamo A fantastic resource for free, high-quality 3D character animations. It allows you to upload your own models or use their library of free characters and animations. All animations are free for commercial and non-commercial use. OpenGameArt – Offers a variety of 2D and 3D assets, including character animations, free for use in your games. The animations available are licensed under Creative Commons or public domain. Kenney – Known for its high-quality, free game assets, Kenney provides 2D and 3D character animations. All assets are free to use in commercial and non-commercial projects. Unity Asset Store (Free Section) – The Unity Asset Store has a collection of free animation packs for both 2D and 3D models. These can be used in Unity projects with clear licensing terms, which can include commercial use. ",
     "url": "/resources/#animations",
     
     "relUrl": "/resources/#animations"
-  },"217": {
+  },"218": {
     "doc": "Resources",
     "title": "3D Models",
     "content": "TurboSquid: While TurboSquid is primarily a paid service, they offer a selection of free models, including characters, environments, and vehicles. CGTrader: A marketplace offering free 3D models, with a range of categories from low-poly characters to more detailed models suitable for game use. Sketchfab: A platform where creators can share 3D models, including both free and paid assets. Sketchfab’s library contains numerous free models, ranging from characters to environment assets. OpenGameArt: Offers a large collection of free 3D models, textures, and assets for game development, with many models suitable for prototyping and indie projects. Kenney: A well-known creator of free game assets, Kenney provides 3D models for characters, environments, and other game elements. Clara.io: A cloud-based 3D modeling tool with a library of free 3D models. You can find a variety of free models for use in games and other projects. Free3D: A repository offering free 3D models in various formats, including .obj, .fbx, and .3ds, for use in game development. ",
     "url": "/resources/#3d-models",
     
     "relUrl": "/resources/#3d-models"
-  },"218": {
+  },"219": {
     "doc": "Resources",
     "title": "3D Humanoid Characters",
     "content": "Mixamo: Mixamo offers a vast collection of free 3D character animations that are ready to be applied to your models. You can upload your own 3D models or choose from a variety of characters provided by Mixamo. The animations cover a wide range of actions, from running and jumping to combat and dancing. All animations are free for both personal and commercial use. OpenGameArt: OpenGameArt provides a range of free 3D animated character models. The site includes fully rigged characters with animation sets for various actions, such as walking, running, and attacking. Models and animations are generally licensed under Creative Commons or public domain, allowing for free use in both personal and commercial projects. Kenney: Kenney’s free asset packs include animated 3D character models, along with animations for movements such as walking and jumping. The models are fully rigged and ready to be used in your projects. All assets from Kenney are free for both commercial and non-commercial use, with no attribution required. ",
     "url": "/resources/#3d-humanoid-characters",
     
     "relUrl": "/resources/#3d-humanoid-characters"
-  },"219": {
+  },"220": {
     "doc": "Resources",
     "title": "Terrain Tools",
     "content": "World Machine (Free Version): World Machine is a powerful terrain generation tool that allows you to create realistic, complex terrains using an intuitive node-based system. The free version includes basic features, enabling you to generate heightmaps, apply erosion effects, and export terrains. Gaea (Free Version): Gaea is another terrain generation tool that offers a free version with powerful terrain-building features. It allows for the creation of heightmaps, erosion effects, and other features like textures and materials for creating realistic terrains. ",
     "url": "/resources/#terrain-tools",
     
     "relUrl": "/resources/#terrain-tools"
-  },"220": {
+  },"221": {
     "doc": "Resources",
     "title": "Useful Unity Tools",
     "content": "DOTween: A fast and efficient animation system that works with Unity’s tweening features to create smooth animations for any kind of object or property. PrimeTween: A high-performance animation and sequencing tool designed to provide maximum flexibility and speed for complex animation systems. PlayerPref Editor: A user-friendly editor tool for managing Unity PlayerPrefs, allowing easy access and modification of saved data. Sticky Notes: A tool that lets developers place sticky notes in the Unity Editor for better organization and reminders within the project. Editor Attributes: A package that provides useful attributes to improve Unity Editor interfaces, such as custom labels, color-coding, and tooltips. Serialized Dictionary: A Unity plugin for using dictionaries in the Inspector, offering a more flexible data structure for game developers. Fast Script Reload: A tool that speeds up script reloading during development, reducing iteration times and enhancing productivity for Unity developers. ",
     "url": "/resources/#useful-unity-tools",
     
     "relUrl": "/resources/#useful-unity-tools"
-  },"221": {
+  },"222": {
     "doc": "Resources",
     "title": "Resources",
     "content": " ",
     "url": "/resources/",
     
     "relUrl": "/resources/"
-  },"222": {
+  },"223": {
     "doc": "Marketplace",
     "title": "Character Window and Marketplace",
     "content": "The game provides a character window which allows you to view information about the player character and purchase items through the marketplace. An overview of each of the panels in the character window is discussed below. ",
     "url": "/_pages/systems/shop.html#character-window-and-marketplace",
     
     "relUrl": "/_pages/systems/shop.html#character-window-and-marketplace"
-  },"223": {
+  },"224": {
     "doc": "Marketplace",
     "title": "Contents",
     "content": ". | Character Window . | Inventory Panel | Equipment Panel | Attributes Panel | Marketplace Panel | Selling Items | . | . ",
     "url": "/_pages/systems/shop.html",
     
     "relUrl": "/_pages/systems/shop.html"
-  },"224": {
+  },"225": {
     "doc": "Marketplace",
     "title": "Character Window",
     "content": "The player can open the marketplace from the character window. This can be done by pressing either the C or I keys (shorthand for either “Character” or “Inventory”). The character window will bring up four related panels: . | the player’s inventory, | the player’s equipment, | the player’s attributes, | and the marketplace. | . Inventory Panel . The inventory shows all items that the player currently has in their inventory. Any item that the player picks up will be automatically added to this screen. The player can store a total of 28 items in their inventory at a time. The player can drag these items to reorder them, or drag them into the corresponding slot on their character to equip them. Placing powerful items into the environment at specific locations can be an effective way of ensuring that players are able to acquire powerful items at very specific points in the game. This helps to maintain balance between players by more closely controlling the power level of players and the quality of their items. Equipment Panel . The equipment panel shows the name of the current character, the player’s current level, and the equipment that is currently equipped. Attributes Panel . This panel shows the current attributes for the player, including any modifiers from gear and any temporary modifiers from buffs or other effects. When discussing the design of your experience in your final design justification documentation, you should may want to consider how your character differs in the early-game, mid-game, and late-game. Having a way to quickly reference attributes can be very helpful for making calculations to estimate values such as effective damage per second (DPS) and effective health (EH). Marketplace Panel . To help the player spend gold, the game provides a marketplace. The marketplace allows the player to purchase any item which hasn’t specifically been excluded from the list of purchasable items. As the experience is intended to be quite short, this aims to ensure that the player can achieve their “full build” even if they are unlucky and don’t get specific drops. If you don’t want the player to always be able to access the marketplace, you can adjust this setting in the GameManager. Go to GameManager &gt; Settings &gt; Show Shop When Character Window Opens. While this is possible, we don’t recommend that you do this as you would then need to build further systems to control how and when the shop can appear. Selling Items . To provide some worth to all items, regardless of whether the player needs them, the game allows players to sell their existing items. Player’s sell an item by dragging it into the ‘Sell’ slot in the marketplace. When an item is sold, it gives the player a portion of its purchase price. By default, this is 25%, but it can be adjusted in the Inventory Values foldout of the GameManager. ",
     "url": "/_pages/systems/shop.html#character-window",
     
     "relUrl": "/_pages/systems/shop.html#character-window"
-  },"225": {
+  },"226": {
     "doc": "Marketplace",
     "title": "Marketplace",
     "content": " ",
     "url": "/_pages/systems/shop.html",
     
     "relUrl": "/_pages/systems/shop.html"
-  },"226": {
+  },"227": {
     "doc": "String Nodes",
     "title": "String Nodes",
     "content": "Below is a summary of all the visual scripting nodes which return a string in the visual scripting system. ",
     "url": "/_pages/visual-coding/string-nodes.html",
     
     "relUrl": "/_pages/visual-coding/string-nodes.html"
-  },"227": {
+  },"228": {
     "doc": "String Nodes",
     "title": "Contents",
     "content": ". | Specify a Specific String | String Nodes | Unit Nodes (Variables) | . Specify a Specific String . If the visual scripting node allows it, you will be able to specify a specific string for the node, rather than using one of the methods below. String Nodes . String . Name of Unit . Returns the name of the given unit. Note that its name is specified by the unitName, and is not the name of the prefab which you see when selecting the unit from the dropdown. String . Name of Ability . Returns the name of the given ability. String . Tag of Ability . Returns the tag of the given ability. String . Tag of Item . Returns the tag of the given item. String . Combine Strings . Combines two strings together using string concatenation. Unit Nodes (Variables) . String &gt; Variable . String variable . Returns the string stored in the variable with the given name. This variable is shared between all scripts in the same “block” (e.g., ability/item). String &gt; Variable . Global String variable . Returns the string stored in the global variable with the given name. This variable is shared across the entire application. ",
     "url": "/_pages/visual-coding/string-nodes.html",
     
     "relUrl": "/_pages/visual-coding/string-nodes.html"
-  },"228": {
+  },"229": {
     "doc": "Systems",
     "title": "Core Game Systems",
     "content": "When you are working on a project or on a part of a project that you were not directly involved in creating, it can be challenging to understand how all of the main pieces fit together. This section of the documentation gives a broad overview of the major game systems to help you become more familiar with the project. Explore each of the systems below, then look at some of the IGB190 Guides if you need any guidance during implementation of your extensions. ",
     "url": "/_pages/systems/systems.html#core-game-systems",
     
     "relUrl": "/_pages/systems/systems.html#core-game-systems"
-  },"229": {
+  },"230": {
     "doc": "Systems",
     "title": "Systems",
     "content": " ",
     "url": "/_pages/systems/systems.html",
     
     "relUrl": "/_pages/systems/systems.html"
-  },"230": {
+  },"231": {
     "doc": "Unit Nodes",
     "title": "Unit Nodes",
     "content": "Below is a summary of all the visual scripting nodes which return a unit in the visual scripting system. ",
     "url": "/_pages/visual-coding/unit-nodes.html",
     
     "relUrl": "/_pages/visual-coding/unit-nodes.html"
-  },"231": {
+  },"232": {
     "doc": "Unit Nodes",
     "title": "Contents",
     "content": ". | Specify a Specific Unit | Unit Nodes (Distance) | Unit Nodes (Random) | Unit Nodes (Variables) | Unit Nodes (Other) | . Specify a Specific Unit . If the visual scripting node allows it, you will be able to specify a specific unit for the node, rather than using one of the methods below (e.g., when spawning a unit). Unit Nodes (Distance) . Unit &gt; Distance . Closest unit near point . Returns the closest unit to the specified point (within the maximum distance). Unit &gt; Distance . Furthest unit near point . Returns the furthest unit to the specified point (within the maximum distance). Unit &gt; Distance . Closest unit near unit . Returns the closest unit to the specified unit (within the maximum distance). Unit &gt; Distance . Furthest unit near unit . Returns the furthest unit to the specified unit (within the maximum distance). Unit Nodes (Random) . Unit &gt; Random . Random unit near point . Returns a random unit within a given distance of a given unit. Unit &gt; Random . Random unit near point . Returns a random unit within a given distance of a given point. Unit Nodes (Variables) . Unit &gt; Variable . Unit variable . Returns the unit stored in the variable with the given name. This variable is shared between all scripts in the same “block” (e.g., ability/item). Unit &gt; Variable . Global Unit variable . Returns the unit stored in the global variable with the given name. This variable is shared across the entire application. Unit Nodes (Other) . Unit &gt; Other . Unit with label . Returns the unit in the scene which has the given label. If multiple units have the same label, it will return a random unit. ",
     "url": "/_pages/visual-coding/unit-nodes.html",
     
     "relUrl": "/_pages/visual-coding/unit-nodes.html"
-  },"232": {
+  },"233": {
     "doc": "Visual Coding",
     "title": "Visual Coding",
     "content": "The IGB190 project provides a visual coding system which aims to help you implement item and ability logic more easily, without the need for extensive code knowledge. It provides many features which provide easy functionality to game-specific logic and visual effects. This page provides an overview of the system, with additional information about each component being explored further on the individual sub-pages. ",
     "url": "/_pages/visual-coding/visual-coding.html",
     
     "relUrl": "/_pages/visual-coding/visual-coding.html"
-  },"233": {
+  },"234": {
     "doc": "Visual Coding",
     "title": "Contents",
     "content": ". | Opening the Visual Code Editors | Visual Coding Structure | Adding Scripts | Node Logic | Node Types | Complete Node List | Deleting or Renaming Scripts | Visual Scripting Shortcuts | . ",
     "url": "/_pages/visual-coding/visual-coding.html",
     
     "relUrl": "/_pages/visual-coding/visual-coding.html"
-  },"234": {
+  },"235": {
     "doc": "Visual Coding",
     "title": "Opening the Visual Code Editors",
     "content": "To open the visual code editors, go to the top Unity menu window and select IGB190 &gt; Open Custom Windows. This will open the Ability Editor, Item Editor, and General Script Editor. For details about each specific window, see their individual pages. Each of these editors stores visual coding logic. For example, go to the Ability Editor and select an ability from the left menu. This will allow you to visually edit properties of the ability, and on the right, you will be able to use the visual script editor to change the functionality of the ability. All of the logic for the abilities and items in the IGB190 Base Project were built using the visual scripting system - no custom logic was implemented. If you want to get a better understanding of how the system works, you may find it useful to view the implementation of the existing abilities. ",
     "url": "/_pages/visual-coding/visual-coding.html#opening-the-visual-code-editors",
     
     "relUrl": "/_pages/visual-coding/visual-coding.html#opening-the-visual-code-editors"
-  },"235": {
+  },"236": {
     "doc": "Visual Coding",
     "title": "Visual Coding Structure",
     "content": "The visual coding system can be used to define custom logic for the experience without needing to write C# code. Visual Code Scripts follow an Event, Condition, Action structure. | The Event controls when the logic will activate. | The Conditions can be used to create aditional activation requirements. | The Actions control what the script will do. | . Custom visual code can be added to specific items using the Item Editor, to abilities with the Ability Editor, or to the game more generally with the General Script Editor. Below is an example showing the visual code for the War Cry ability. When the ability containing this script is cast, it spawns a visual effect on the caster, then their damage dealt is increased by 25% and damage taken is decreased by 25% for 10 seconds. ",
     "url": "/_pages/visual-coding/visual-coding.html#visual-coding-structure",
     
     "relUrl": "/_pages/visual-coding/visual-coding.html#visual-coding-structure"
-  },"236": {
+  },"237": {
     "doc": "Visual Coding",
     "title": "Adding Scripts",
     "content": "Each ability or item in the visual coding system can contain multiple scripts. In the above example, there is only one script which triggers when the ability is cast. Some abilities, however, may require multiple scripts. For example, imagine that the War Cry ability had a secondary effect: whenever the player critically hits an enemy, the cooldown is reduced by one second. This can be handled by adding a new script by pressing the Create New button at the top of the image. Then, you can implement the required custom logic to implement the remainder of the ability logic. A similar approach is used for all ranged attacks which fire a projectile. The first script checks for when the ability is cast, and spawns an appropriate projectile. The second script checks for when that projectile collides with an enemy and performs appropriate actions. ",
     "url": "/_pages/visual-coding/visual-coding.html#adding-scripts",
     
     "relUrl": "/_pages/visual-coding/visual-coding.html#adding-scripts"
-  },"237": {
+  },"238": {
     "doc": "Visual Coding",
     "title": "Node Logic",
     "content": "This visual scripting system uses a block-based (or node-based) approach for defining logic. The system has pre-defined events, conditions, and actions, but each of these can contain dynamic nodes. For example, in the above script, an action node is reducing the cooldown of an ability, but there are three dynamic nodes: . | The ability cooldown to reduce (in this case, War Cry) | The unit who has the ability | The amount that the cooldown should be reduced by (in seconds) | . You can click on any of these dynamic nodes to enter an appropriate value. Each of these nodes has a specific type (e.g., the first node here must be an ability, the second must be a unit, and the third must be an amount). When choosing an appropriate value for the node, you usually have three options: . | Enter an exact value (e.g., the duration of 1 second, or the exact War Cry ability). These are usually shown in green. | Enter a preset (e.g., the ‘Ability Owner’, or the ‘Damaged Unit’). The presets available are usually determined by the event which triggered the logic. E.g., we can only refer to the Damaging Unit here because the Unit is damaged event was triggered. These are usually shown in yellow. | Enter a function (e.g., instead of choosing to reduce the cooldown of War Cry, we could have made this node return a random ability on the ability owner instead). Function nodes create additional nodes inside the current node. | . An example showing the options when the ‘1s’ block is clicked is shown below. Currently, this is set to use a specific value of 1, but could be adjusted to use a preset (e.g., reducing the cooldown by the amount of damage dealt, or a function instead). ",
     "url": "/_pages/visual-coding/visual-coding.html#node-logic",
     
     "relUrl": "/_pages/visual-coding/visual-coding.html#node-logic"
-  },"238": {
+  },"239": {
     "doc": "Visual Coding",
     "title": "Node Types",
     "content": "Below is a list of all common types of nodes you may encounter when using the visual scripting system. The type of node should be self-evident from its description (e.g., an action may read as “Spawn [Unit] at [Location]). In this case, it is clear that the first block will require you to specify a unit and the second block will require you to specify a location. | Node Type | Description | . | Text | Resolves to plain text. (e.g., for displaying a message on the screen). | . | Number | Resolves to a decimal number. (e.g., for choosing how much gold to give the player). | . | Ability | Resolves to an ability (e.g., for checking whether a specific ability killed an enemy). | . | Item | Resolves to an item (e.g., for choosing which item to drop). | . | Projectile | Resolves to a projectile (e.g., for choosing which projectile to spawn). | . | Audio Clip | Resolves to an Audio Clip (e.g., for choosing what sound to play). | . | Unit | Resolves to a Unit (e.g., for choosing which unit to damage). | . | Unit Group | Resolves to a group of units (which could be empty). | . | Effect | Resolves to a visual effect (e.g., for choosing which visual to spawn). | . | Position | Resolves to a position (e.g., for choosing where to spawn a unit). | . | Option | Resolves to an option from a dropdown. E.g., choosing which stat a buff should affect. | . ",
     "url": "/_pages/visual-coding/visual-coding.html#node-types",
     
     "relUrl": "/_pages/visual-coding/visual-coding.html#node-types"
-  },"239": {
+  },"240": {
     "doc": "Visual Coding",
     "title": "Complete Node List",
     "content": "The visual scripting system contains a large number of nodes. Each of these has been listed on their own pages, alongside relevant documentation. Core Root Nodes: . | Event Nodes | Condition Nodes | Action Nodes | . Nodes which return a specific type: . | Unit Nodes | Number Nodes | String Nodes | Item Nodes | Ability Nodes | Color Nodes | Other Nodes | . ",
     "url": "/_pages/visual-coding/visual-coding.html#complete-node-list",
     
     "relUrl": "/_pages/visual-coding/visual-coding.html#complete-node-list"
-  },"240": {
+  },"241": {
     "doc": "Visual Coding",
     "title": "Deleting or Renaming Scripts",
     "content": "To delete or rename a script, right click on the script and select the appropriate option. ",
     "url": "/_pages/visual-coding/visual-coding.html#deleting-or-renaming-scripts",
     
     "relUrl": "/_pages/visual-coding/visual-coding.html#deleting-or-renaming-scripts"
-  },"241": {
+  },"242": {
     "doc": "Visual Coding",
     "title": "Visual Scripting Shortcuts",
     "content": "The visual scripting system uses some very rudimentary shortcuts. It provides limited Copy+Paste functionality, Undo functionality, and allows you to delete or reorder root nodes. ",

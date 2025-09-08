@@ -41,3 +41,11 @@ If you are looking for inspiration for abilities, you should consider looking th
 - [Path of Exile Skill Database](https://poedb.tw/us/Skill_Gems)
 - [Path of Exile 2 Skill Database](https://poe2db.tw/us/Skill_Gems)
 
+## Gameplay Videos
+Here are some recordings of gameplay with the three existing characters:
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/H-Yc1aPlorY" allowfullscreen frameborder="0"> </iframe>
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/-o3-uwK4vDo" allowfullscreen frameborder="0"> </iframe>
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/QbrwgIYmXn8" allowfullscreen frameborder="0"> </iframe>

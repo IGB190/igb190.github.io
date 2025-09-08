@@ -15,7 +15,9 @@ To help you do this, you will be contributing to a partially-completed project w
 
 Areas you may wish to explore include:
 
-- [Guides](_pages/guides/guides.html): Contains a variety of helpful guides aimed at teaching the basics of various topics.
+- [Systems Summary](_pages/systems/systems.html): Contains an overview of the core game systems and their core functionality. If you are just starting out, reading a summary of each system would be a good place to start.
+
+- [IGB190 Guides](_pages/igb190-guides/igb190-guides.html): Contains a variety of helpful guides for the IGB190 project, aimed at helping you get started with the core activities: making your character with custom abilities, making custom items, and creating an interesting build.
 
 - [Visual Coding](_pages/visual-coding/visual-coding.html): An overview of the visual coding system available in the experience for creating abilities, items, quests, and general game logic (such as tutorials and bespoke events).
 
