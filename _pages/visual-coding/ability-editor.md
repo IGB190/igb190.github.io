@@ -2,6 +2,7 @@
 title: Ability Editor
 layout: default
 parent: Visual Coding
+nav_order: 1
 ---
 
 # Ability Editor

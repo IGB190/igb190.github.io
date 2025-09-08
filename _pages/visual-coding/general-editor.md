@@ -2,6 +2,7 @@
 title: General Editor
 layout: default
 parent: Visual Coding
+nav_order: 3
 ---
 
 # General Editor

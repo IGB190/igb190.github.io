@@ -2,6 +2,7 @@
 title: Item Editor
 layout: default
 parent: Visual Coding
+nav_order: 2
 ---
 
 # Item Editor
