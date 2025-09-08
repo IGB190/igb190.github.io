@@ -1,5 +1,5 @@
 ---
-title: Creating a Custom Character
+title: Creating a Character
 layout: default
 parent: IGB190 Guides
 ---

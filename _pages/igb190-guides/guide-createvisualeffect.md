@@ -1,7 +1,7 @@
 ---
-title: Visual Effects
+title: Creating a Visual Effect
 layout: default
-parent: Systems
+parent: IGB190 Guides
 ---
 
 # Visual Effects

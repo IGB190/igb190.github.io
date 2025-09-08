@@ -1,10 +1,10 @@
 ---
-title: Set Dressing an Environment
+title: Theming and Set Dressing
 layout: default
 parent: General Guides
 ---
 
-# Set Dressing an Environment
+# Theming and Set Dressing
 In this guide, you will learn how to set dress an environment to make the space feel more natural and unique. This is especially beneficial when the space has been created using a small set of generic tiles.
 
 ---

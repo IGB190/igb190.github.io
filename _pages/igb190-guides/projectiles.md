@@ -1,7 +1,7 @@
 ---
-title: Projectiles
+title: Creating a Projectile
 layout: default
-parent: Systems
+parent: IGB190 Guides
 ---
 
 # Projectiles

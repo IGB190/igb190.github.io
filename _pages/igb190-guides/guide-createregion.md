@@ -1,7 +1,7 @@
 ---
-title: Regions
+title: Creating a Region
 layout: default
-parent: Systems
+parent: IGB190 Guides
 ---
 
 # Regions

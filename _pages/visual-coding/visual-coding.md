@@ -5,14 +5,27 @@ has_children: true
 nav_order: 4
 ---
 
+
+
 # Visual Coding
 {: .no_toc }
-In this guide, you will learn how to set dress an environment to make the space feel more natural and unique. This is especially beneficial when the space has been created using a small set of generic tiles.
+The IGB190 project provides a visual coding system which aims to help you implement item and ability logic more easily, without the need for extensive code knowledge. It provides many features which provide easy functionality to game-specific logic and visual effects.
+
+This page provides an overview of the system, with additional information about each component being explored further on the individual sub-pages.
 
 ---
 <h2 class="text-delta">Contents</h2>
 1. TOC
 {:toc}
+---
+
+## Opening the Visual Code Editors
+To open the visual code editors, go to the top Unity menu window and select `IGB190 > Open Custom Windows`. This will open the [**Ability Editor**](ability-editor.html), [**Item Editor**](item-editor.html), and [**General Script Editor**](general-editor.html). For details about each specific window, see their individual pages.
+
+Each of these editors stores visual coding logic. For example, go to the **Ability Editor** and select an ability from the left menu. This will allow you to visually edit properties of the ability, and on the right, you will be able to use the visual script editor to change the functionality of the ability.
+
+All of the logic for the abilities and items in the IGB190 Base Project were built using the visual scripting system - no custom logic was implemented. If you want to get a better understanding of how the system works, you may find it useful to view the implementation of the existing abilities.
+
 ---
 
 ## Visual Coding Structure
@@ -30,385 +43,72 @@ Below is an example showing the visual code for the **War Cry** ability. When th
 
 ---
 
-## Events
-Below is a summary of all the events in the visual scripting system, with a short summary of each and an outline of any associated preset values which will be populated from the event.
+## Adding Scripts
+Each ability or item in the visual coding system can contain **multiple scripts**. In the above example, there is only one script which triggers when the ability is cast. Some abilities, however, may require multiple scripts. For example, imagine that the War Cry ability had a secondary effect: whenever the player critically hits an enemy, the cooldown is reduced by one second.
 
+This can be handled by adding a new script by pressing the `Create New` button at the top of the image. Then, you can implement the required custom logic to implement the remainder of the ability logic.
 
+![Script Editor Example](../assets/war-cry-ability-2.jpg)
 
-### Ability Events
+{: .note }
+> A similar approach is used for all ranged attacks which fire a projectile. The first script checks for when the ability is cast, and spawns an appropriate projectile. The second script checks for when that projectile collides with an enemy and performs appropriate actions.
 
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">When a unit begins casting this ability</summary>
-> This event will only trigger if it is attached to an ability, and will only trigger for the unit that cast the ability. It will trigger when the ability **starts** casting. If you want to handle the ability cast logic, it is recommended you use the `When a unit finishes casting this ability` event instead.
->
-> The event populates the following preset values:
-> - **Casting Unit** (Unit): The unit that cast the ability.
-> - **Ability Target Location** (Location): The location that the ability should be cast at.
-> - **Target Unit** (Unit): The target unit for the ability (only exists if the ability targets a specific unit).
-> </details>
+---
 
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">When a unit finishes casting this ability</summary>
-> This event will only trigger if it is attached to an ability, and will only trigger for the unit that cast the ability. It will trigger when the ability **finishes** casting, and is the main event you should use to execute logic when coding the logic for an ability cast.
->
-> The event populates the following preset values:
-> - **Casting Unit** (Unit): The unit that cast the ability.
-> - **Ability Target Location** (Location): The location that the ability should be cast at.
-> - **Target Unit** (Unit): The target unit for the ability (only exists if the ability targets a specific unit).
-> </details>
+## Node Logic
+This visual scripting system uses a block-based (or node-based) approach for defining logic. The system has pre-defined events, conditions, and actions, but each of these can contain dynamic nodes. For example, in the above script, an action node is reducing the cooldown of an ability, but there are three dynamic nodes:
 
-### Time Events
+1. The ability cooldown to reduce (in this case, War Cry)
+2. The unit who has the ability
+3. The amount that the cooldown should be reduced by (in seconds)
 
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">On script loaded</summary>
-> This event will trigger when the script is loaded. The script is *loaded* when the logic should start being 'checked'. If the script is attached to an ability, this will either be triggered when the unit spawns, or the ability is added to the unit. If the script is attached to an item, it is triggered when the item is equipped. If the script is attached to a general script, it will be triggered when the game begins. This event is often used to handle setup logic.
->
-> The event populates no preset values.
-> </details>
+You can click on any of these dynamic nodes to enter an appropriate value. Each of these nodes has a specific type (e.g., the first node here must be an *ability*, the second must be a *unit*, and the third must be an *amount*). When choosing an appropriate value for the node, you usually have three options:
 
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">On script unloaded</summary>
-> This event will trigger when the script is unloaded. The script is *unloaded* when the logic should stop being 'checked'. If the script is attached to an ability, this will either be triggered when the unit dies, or the ability is removed from the unit. If the script is attached to an item, it is triggered when the item is unequipped.
->
-> The event populates no preset values.
-> </details>
+1. Enter an exact value (e.g., the duration of 1 second, or the *exact* War Cry ability). These are usually shown in **green**.
+1. Enter a preset (e.g., the 'Ability Owner', or the 'Damaged Unit'). The presets available are usually determined by the event which triggered the logic. E.g., we can only refer to the `Damaging Unit` here because the `Unit is damaged` event was triggered. These are usually shown in **yellow**.
+1. Enter a function (e.g., instead of choosing to reduce the cooldown of War Cry, we could have made this node return a *random ability* on the ability owner instead). Function nodes create additional nodes inside the current node.
 
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">Do every frame</summary>
-> This event will trigger **every game frame**. This can be very powerful if you need to constantly check if something has happened, but should be avoided if you are executing complex game logic (e.g., don't spawn visual effects every frame).
->
-> The event populates no preset values.
-> </details>
+An example showing the options when the '`1s`' block is clicked is shown below. Currently, this is set to use a specific value of 1, but could be adjusted to use a preset (e.g., reducing the cooldown by the amount of damage dealt, or a function instead).
 
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">Do after X seconds</summary>
-> This event will trigger a specific amount of time after the script is first loaded, and then won't trigger again. You can specify the exact amount of time in the number node on the event.
->
-> The event populates no preset values.
-> </details>
+![Script Editor Example](../assets/visual-scripting-nodes.jpg)
 
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">Do every X seconds</summary>
-> This event will repeatedly trigger, with a delay between each execution. Specify the exact amount of time to delay between executions in the number node on the event.
->
-> The event populates no preset values.
-> </details>
+---
 
-### Unit Events
+## Node Types
+Below is a list of all common types of nodes you may encounter when using the visual scripting system. The type of node should be self-evident from its description (e.g., an action may read as "Spawn **[Unit]** at **[Location]**). In this case, it is clear that the first block will require you to specify a unit and the second block will require you to specify a location.
 
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">Unit is killed</summary>
-> This event is triggered every time a unit is killed, regardless of faction or how it was killed (e.g., it could be an ally, a monster, or the player itself).
->
-> The event populates the following preset values:
-> - **Killed Unit** (Unit): The unit that was killed.
-> - **Killing Unit** (Unit): The unit that killed the dying unit.
-> - **Killing Ability** (Ability): The ability that killed the dying unit.
-> - **Is Critical** (Boolean): True if the ability was a critical, otherwise False.
-> </details>
+| **Node Type** | **Description** |
+| Text | Resolves to plain text. (e.g., for displaying a message on the screen). |
+| Number | Resolves to a decimal number. (e.g., for choosing how much gold to give the player). |
+| Ability | Resolves to an ability (e.g., for checking whether a specific ability killed an enemy). |
+| Item | Resolves to an item (e.g., for choosing which item to drop). |
+| Projectile | Resolves to a projectile (e.g., for choosing which projectile to spawn). |
+| Audio Clip | Resolves to an Audio Clip (e.g., for choosing what sound to play). |
+| Unit | Resolves to a Unit (e.g., for choosing which unit to damage). |
+| Unit Group | Resolves to a group of units (which could be empty). |
+| Effect | Resolves to a visual effect (e.g., for choosing which visual to spawn). |
+| Position | Resolves to a position (e.g., for choosing where to spawn a unit). |
+| Option | Resolves to an option from a dropdown. E.g., choosing which stat a buff should affect. |
 
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">Unit is damaged</summary>
-> This event is triggered every time a unit is damaged, regardless of faction or how it was damaged (e.g., it could be an ally, a monster, or the player itself).
->
-> The event populates the following preset values:
-> - **Damaged Unit** (Unit): The unit that was damaged.
-> - **Damaging Unit** (Unit): The unit that damaged the dying unit.
-> - **Damaging Ability** (Ability): The ability that damaged the damaged unit.
-> - **Damage Dealt** (Number): The amount of damage done by the ability.
-> - **Is Critical** (Boolean): True if the ability was a critical, otherwise False.
-> </details>
+## Complete Node List
+The visual scripting system contains a large number of nodes. Each of these has been listed on their own pages, alongside relevant documentation.
 
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">Unit is healed</summary>
-> This event is triggered every time a unit is healed, regardless of faction or how it was healed (e.g., it could be an ally, a monster, or the player itself).
->
-> The event populates the following preset values:
-> - **Healed Unit** (Unit): The unit that was healed.
-> - **Healing Unit** (Unit): The unit that healed the unit.
-> </details>
+Core Root Nodes:
+- [Event Nodes](event-nodes.html)
+- [Condition Nodes](condition-nodes.html)
+- [Action Nodes](action-nodes.html)
 
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">Unit gains resource</summary>
-> This event is triggered every time a unit gains resource (except from base regeneration).
->
-> The event populates the following preset values:
-> - **Triggering Unit** (Unit): The unit that gained sources.
-> - **Resources Gained** (Number): The amount of resources gained.
-> </details>
+Nodes which return a specific type:
+- [Unit Nodes](unit-nodes.html)
+- [Number Nodes](number-nodes.html)
+- [String Nodes](string-nodes.html)
+- [Item Nodes](item-nodes.html)
+- [Ability Nodes](ability-nodes.html)
+- [Color Nodes](color-nodes.html)
+- [Other Nodes](other-nodes.html)
 
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">Unit loses resource</summary>
-> This event is triggered every time a unit loses resource.
->
-> The event populates the following preset values:
-> - **Triggering Unit** (Unit): The unit that lost sources.
-> - **Resources Gained** (Number): The amount of resources lost.
-> </details>
+## Deleting or Renaming Scripts
+To delete or rename a script, right click on the script and select the appropriate option. 
 
-### Player Events
-
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">Player gains experience</summary>
-> This event is triggered every time the player gains experience.
->
-> The event does not populate any preset values.
-> </details>
-
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">Player gains a level</summary>
-> This event is triggered every time the player gains a level.
->
-> The event does not populate any preset values.
-> </details>
-
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">Player sells an item</summary>
-> This event is triggered every time the player sells an item through the shop.
->
-> The event populates the following preset values:
-> - **Triggering Item** (Unit): The item that was sold.
-> </details>
-
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">Player buys an item</summary>
-> This event is triggered every time the player buys an item through the shop.
->
-> The event populates the following preset values:
-> - **Triggering Item** (Unit): The item that was purchased.
-> </details>
-
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">Player equips an item</summary>
-> This event is triggered every time the player equips an item.
->
-> The event populates the following preset values:
-> - **Triggering Item** (Unit): The item that was equipped.
-> </details>
-
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">Player unequips an item</summary>
-> This event is triggered every time the player unequips an item.
->
-> The event populates the following preset values:
-> - **Triggering Item** (Unit): The item that was unequipped.
-> </details>
-
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">Player picks up gold</summary>
-> This event is triggered every time the player picks up gold.
->
-> The event populates the following preset values:
-> - **Gold Added** (Number): The amount of gold collected.
-> </details>
-
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">Player picks up a health globe</summary>
-> This event is triggered every time the player picks up a health globe.
->
-> The event populates the following preset values:
-> - **Health Restored** (Number): The amount of health restored.
-> </details>
-
-### Region Events
-
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">Unit enters region</summary>
-> This event is triggered when the player enters a region with a specific name. Use the text slot in the event to specify the exact region name. This must match the name on the region **exactly**.
->
-> The event does not populate any preset values.
-> </details>
-
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">Unit leaves region</summary>
-> This event is triggered when the player leave a region with a specific name. Use the text slot in the event to specify the exact region name. This must match the name on the region **exactly**.
->
-> The event does not populate any preset values.
-> </details>
-
-### Projectile Events
-
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">Projectile collides with an enemy</summary>
-> This event is triggered when a projectile spawned by this ability or item collides with an enemy of its owner. Note that for optimisation purposes, you cannot use this event to check if a projectile created from *another source* collided with an enemy. **exactly**.
->
-> The event populates the following preset values:
-> - **Event Projectile** (Projectile): The projectile that collided.
-> - **Casting Unit** (Unit): The unit that created the projectile.
-> - **Colliding Unit** (Unit): The unit that was hit by the projectile.
-> </details>
-
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">Projectile times out</summary>
-> This event is triggered when a projectile spawned by this ability or item exceeds its assigned lifetime. Note that you must have first assigned a lifetime to the projectile via the `Projectile > Set Lifetime` action. **exactly**.
->
-> The event populates the following preset values:
-> - **Event Projectile** (Projectile): The projectile that is timing out.
-> - **Casting Unit** (Unit): The unit that created the projectile.
-> </details>
-
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">Projectile reaches its goal</summary>
-> This event is triggered when a projectile spawned by this ability reaches its goal. This only triggers if the projectile was assigned a goal location, via the `Projectile > Move Projectile Towards Point` action.
->
-> The event populates the following preset values:
-> - **Event Projectile** (Projectile): The projectile that is timing out.
-> - **Casting Unit** (Unit): The unit that created the projectile.
-> - **Goal Position** (Location): The final gloal location.
-> - **Goal Unit** (Unit): The goal unit. This is only assigned if the projectile was assigned to move towards a specific unit.
-> </details>
-
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">Projectile collides with terrain</summary>
-> This event is triggered when a projectile spawned by this ability/item collides with terrain (e.g., a wall).
->
-> The event populates the following preset values:
-> - **Event Projectile** (Projectile): The projectile that collided with terrain.
-> - **Casting Unit** (Unit): The unit that created the projectile.
-> </details>
-
-### Quest Events
-
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">On quest received</summary>
-> This event is triggered when the player receives a specific quest. Use the text slot in the event to specify the exact quest name. This must match the name of the quest **exactly**.
->
-> The event does not populate any preset values.
-> </details>
-
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">On quest completed</summary>
-> This event is triggered when the player completes a specific quest. Use the text slot in the event to specify the exact quest name. This must match the name of the quest **exactly**.**exactly**.
->
-> The event does not populate any preset values.
-> </details>
-
-### Input Events
-
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">On key down</summary>
-> This event is triggered when the player presses a specific key. Use the text slot in the event to specify the exact key. For simple keys, just enter the key (e.g., enter 'f' if you want to check for the f key being pressed). If you want to check more "complex" keybinds, refer to the lists in the discussion thread [**here**](https://discussions.unity.com/t/c-list-of-string-name-for-input-getkey-string-name/112629/3).
->
-> The event does not populate any preset values.
-> </details>
-
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">On key up</summary>
-> This event is triggered when the player releases a specific key. Use the text slot in the event to specify the exact key. For simple keys, just enter the key (e.g., enter 'f' if you want to check for the f key being pressed). If you want to check more "complex" keybinds, refer to the lists in the discussion thread [**here**](https://discussions.unity.com/t/c-list-of-string-name-for-input-getkey-string-name/112629/3).
->
-> The event does not populate any preset values.
-> </details>
-
-{: .highlight }
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">On key held</summary>
-> This event is triggered when the player every frame while they are holding a specific key. Use the text slot in the event to specify the exact key. For simple keys, just enter the key (e.g., enter 'f' if you want to check for the f key being pressed). If you want to check more "complex" keybinds, refer to the lists in the discussion thread [**here**](https://discussions.unity.com/t/c-list-of-string-name-for-input-getkey-string-name/112629/3).
->
-> The event does not populate any preset values.
-> </details>
-
-## Conditions
-
-### Region Conditions
-
-{: .new-title }
-> Condition > Region
-> 
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">Region exists</summary>
-> ![Script Editor Example](../assets/condition-1.jpg)
->
-> True if a region with the **exact** name currently exists. 
-> </details>
-
-{: .new-title }
-> Condition > Region
-> 
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">Unit is in region</summary>
-> ![Script Editor Example](../assets/condition-2.jpg)
->
-> True if the specified unit is currently in a region with the specified name. The name must match the region **exactly**.
-> </details>
-
-### Input Conditions
-
-{: .new-title }
-> Condition > Input
-> 
-> <details markdown="1" class="note">
-> <summary style="font-weight: 500;">Key is held</summary>
-> ![Script Editor Example](../assets/condition-3.jpg)
->
-> True if the specified key is currently being held. For simple keys, just enter the key (e.g., enter 'f' if you want to check for the f key being pressed). If you want to check more "complex" keybinds, refer to the lists in the discussion thread [**here**](https://discussions.unity.com/t/c-list-of-string-name-for-input-getkey-string-name/112629/3).
-> </details>
-
-
-|Time |
-| On Script Loaded | N/A |
-| On script unloaded <br> test | |
-
-
-| **Actions** |
-| Wait | Wait for [NUMBER] seconds. |
-| If Statement | Do actions if [BOOL] |
-| While Statement | Do actions while [BOOL] |
-
-## Variable Types
-- **TEXT**: Plain text.
-- **NUMBER**: A decimal number.
-- **ABILITY**: An ability object.
-- **ITEM**: An item object.
-- **PROJECTILE**: 
-- **AUDIO CLIP**: A sound file.
-- **UNIT**: A single unit.
-- **UNIT GROUP**: A group of units (could be empty).
-- **EFFECT**: A particle effect which can be spawned.
-- **POSITION**: A Vector representing a position.
-- **OPTION**: Select from a preset list (e.g., the exact stat that should be modified).
-
-
-## Deleting and Renaming Scripts
-
-## Events
-
-#### When a unit begins casting this ability
-
-
-
-|**Type** | **Variable** |**Description** |
-|float | healthPickedUp | The amount of health that was picked up. |
-
-
-
-The
+## Visual Scripting Shortcuts
+The visual scripting system uses some very rudimentary shortcuts. It provides limited `Copy+Paste` functionality, `Undo` functionality, and allows you to delete or reorder root nodes.

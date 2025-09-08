@@ -10,6 +10,9 @@ parent: Code Documentation
 {: .no_toc }
 The GoldPickup class is used to control the generation of gold pickups.
 
+{: .note }
+You are not required to write any code in this unit. It is recommended that you instead use the provided visual scripting system in this unit. If you want to implement logic that cannot easily be handled by that system though, this documentation should help you better understand the code and classes in the project.
+
 ![Image of the Monster Attributes](../assets/gold-pickup-1.jpg)
 
 ---

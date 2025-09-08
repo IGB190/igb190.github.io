@@ -5,32 +5,16 @@ parent: Code Documentation
 ---
 
 # The Unit Class
-While you are not required to write any code in the development of your experience, if you need to implement complex logic for an item, ability, quest, or other game mechanic, this section will show you how it can be done. This page will focus specifically on how you can build an item with custom logic.
+This page details the key public methods available to interact with the Unit class. Both the Player and the Monster classes inherit from this class, so any methods shown here will work on any unit in the game. 
 
-
-
-
-
-The experience can be developed without any code, but if you do want to use code to develop your items, abilities, quests or other content to control complex logic which cannot easi
+{: .note }
+You are not required to write any code in this unit. It is recommended that you instead use the provided visual scripting system in this unit. If you want to implement logic that cannot easily be handled by that system though, this documentation should help you better understand the code and classes in the project.
 
 ---
 <h2 class="text-delta">Contents</h2>
 1. TOC
 {:toc}
 ---
-
-## Unit Logic
-
-
-### Ability Selection
-Non-player units will constantly try to 
-
-### Target Selection
-
-
-### Unit Range
-Unit
-
 
 ## Public Methods
 You can interact with units via the public methods. These allow you to modify unit stats, visuals, and other key properties.
@@ -205,78 +189,3 @@ unit.AddTimedAbilityDamageModifier(ability, 2.0f, 5.0f, "Frenzy", 1);
 // the given reference name (e.g., this would remove the frenzy buff in the previous example).
 unit.RemoveAbilityBuffModifiers(ability, "Frenzy");
 ```
-
-
-
-### Damaging a Unit
-```csharp
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
----
-
-
-## Download the Model
-
-{: .highlight }
-> 1. Go to [Mixamo](https://www.mixamo.com/).
-1. Log in, or create a new account if you do not already have one.
-1. Select or upload your character model.
-1. Customize the animation if needed by selecting from the animations available.
-1. Click the Download button.
-1. Choose the following options for Unity:
-- **Format**: FBX for Unity.
-- **Pose**: T-Pose.
-- **Animation**: If you want to include the animation, make sure it's selected.
-- **Skin**: With Skin.
-1. Click the Download button in the popup.
-
-## Import the Mixamo Model
-
-{: .highlight }
-> 1. Open your Unity project.
-1. In the Project window, navigate to the folder you want to import the model into.
-1. Drag the downloaded FBX file into the Unity folder, or right-click and select Import New Asset to locate and import the file manually.
-1. Once imported, select the model in the Project window.
-1. In the Inspector, go to the Model tab and ensure the Animation Type is set to Humanoid (for human-like characters) or Generic (for other types of models).
-1. Under the Material section, if you're using the legacy shader, check Import Materials and Use Legacy Materials to ensure proper texture mapping. This will help the model use the correct materials that were imported with the FBX.
-1. Click Apply.
-
-## Importing Mixamo Animations
-> 1. Go to Mixamo.com.
-1. Log in, or create a new account if you do not already have one.
-
-{: .warning }
-Mixamo models use different avatars for defining animations. This means that an animation shown on one character may not look correct if it is applied to a different character. If you encounter this problem, you should use a T-Pose for the avatar instead.
-
-<iframe width="480" height="360" src="http://www.youtube.com/embed/WO82PoAczTc" frameborder="0"> </iframe>
-
-
-dfgdfgdfg
-
-## Features
-- Clean layout
-- Responsive design
-- Easy to use
-
-Default label
-{: .label }
-
-Blue label
-{: .label .label-blue }
-
-Stable
-{: .label .label-green }
-
-New release
-{: .label .label-purple }
-
-Coming soon
-{: .label .label-yellow }
-
-Deprecated
-{: .label .label-red }

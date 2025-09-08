@@ -6,7 +6,7 @@ parent: Code Documentation
 
 # The Player Class
 {: .no_toc }
-The player class handles all logic unique to the player character. The player class inherits from the Unit class, so all Unit methods can also be called on the player.
+The player class handles all logic unique to the player character. The player class inherits from the [**Unit**](class-unit.html) class, so all Unit methods can also be called on the player.
 
 {: .note }
 You are not required to write any code in this unit. It is recommended that you instead use the provided visual scripting system in this unit. If you want to implement logic that cannot easily be handled by that system though, this documentation should help you better understand the code and classes in the project.
