@@ -10,6 +10,8 @@ parent: Code Documentation
 {: .no_toc }
 The ItemPickup class is used to control the generation of item pickups.
 
+![Image of the Monster Attributes](../assets/item-pickup-1.jpg)
+
 ---
 <h2 class="text-delta">Contents</h2>
 1. TOC
